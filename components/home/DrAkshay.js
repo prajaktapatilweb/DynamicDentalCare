@@ -30,18 +30,17 @@ const DrAkshay = () => {
     "Former Assistant Professor",
   ];
   return (
-    <Box sx={{ backgroundColor: "#091d3e" }}>
+    <Box sx={{ py: { xs: 7, md: 7 }, backgroundColor: "background.paper" }}>
       <Container>
         <Grid container spacing={3} alignItems="center" justifyContent="center">
           <Grid item xs={12} sm={5}>
             <Image
-              src="/images/dr/dr09.png"
-              height={500}
-              width={600}
-              objectFit="contain"
-              // layout="responsive"
+              src="/images/dr/dr12.jpg"
+              height={100}
+              width={100}
+              layout="responsive"
               alt="Feature img"
-            // style={{ borderRadius: "50%", border: "5px  black outset" }}
+              style={{ borderRadius: "50%", border: "5px  black outset" }}
             // className="dranim"
             ></Image>
           </Grid>

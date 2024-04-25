@@ -17,7 +17,7 @@ import DrAkshay from '../components/home/DrAkshay';
 import Contact from '../components/home/Contact';
 import Blog from '../components/Blog';
 import SlideBasicThree from '../components/SlideBasicThree';
-import { heroPhotoList } from '../components/constant/Photoslider';
+import { heroPhotoList } from '../components/Constant/Photoslider';
 import Hero from '../components/home/heroadd/Hero1';
 const Testimonial = lazy(() => import('../components/home/Testimonial'))
 
@@ -31,7 +31,7 @@ export default function Home() {
       <Dentalservices></Dentalservices>
       <Hero></Hero>
 
-      {/* <DrAkshay></DrAkshay> */}
+      <DrAkshay></DrAkshay>
       <Suspense fallback=
         {<div>Component are loading please wait...</div>}>
         <Photogallery />

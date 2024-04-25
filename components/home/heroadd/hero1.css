@@ -1,107 +1,52 @@
- .heros{
-    /* height: calc(100vh - 100px); */
-    /* overflow: hidden; */
-    background: linear-gradient(180deg,#0c0c1d,#111132);
-    position: relative;
-
-    .wrapper{
-      /* // max-width: 1366px; */
-      /* height: 100%; */
-      margin: auto;
-
-      .textcontainer{
-         height: 100%;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         gap:40px;
-       }
-       img{
-         width: 50px;
-       }
-       h2{
-         font-size: 30px;
-         color: rebeccapurple;
-         letter-spacing: 10px;
-       }
-       h1{
-         font-size: 80px;
-       }
-       .buttons{
-         button{
-            padding: 20px;
-            border: 1px solid white;
-            border-radius: 10px;
-            background-color: transparent;
-            color: white;
-            margin-right: 20px;
-            cursor: pointer;
-            font-weight: 300;
-         }
-
-       }
-    }
-
-    .imagecontainer{
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-    .slidingcontainer{
-      position: absolute;
-      font-size: 50vh;
-      bottom: -120px;
-      white-space: nowrap;
-color: #ffffff09;
-width: 50%;
-font-weight: bold;
-    }
-    
- }
-
- /*coach photo behind border*/
-
-.imgbox {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+.heros {
   overflow: hidden;
-}
-.imgbox::before {
-  content: '';
-  position: absolute;
-  inset: -5px;
-  background: linear-gradient(255deg, white, #45f3ff, white);
+  background: url(/images/backbg1.jpg);
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+  
+  background-position: right;
 
-  /* background: linear-gradient(355deg,#ff3c7b,#45f3ff); */
-  transition: 0.5s;
-  animation: animate 2s linear infinite;
-}
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
+  position: relative;
+
+  h2 {
+    font-size: 30px;
+    color: rebeccapurple;
+    letter-spacing: 10px;
   }
-  100% {
-    transform: rotate(360deg);
+  h1 {
+    /* font-size: 80px; */
   }
-}
-.imgbox::after {
-  content: '';
-  position: absolute;
-  inset: 5px;
-  background-color: #292929;
-  border-radius: 50%;
-  z-index: 1;
-}
-.content {
-  position: absolute;
-  inset: 5px;
-  /* border:2px solid white; */
-  z-index: 3;
-  border-radius: 50%;
+  .buttons {
+    button {
+      padding: 20px;
+      border: 1px solid white;
+      border-radius: 10px;
+      background-color: transparent;
+      color: white;
+      margin-right: 20px;
+      cursor: pointer;
+      font-weight: 300;
+    }
+  }
 }
 
-/*end  coach card css*/
+.slidingcontainer {
+  position: absolute;
+  font-size: 30vh;
+  bottom: -120px;
+  white-space: nowrap;
+  color: #ffffff09;
+  width: 50%;
+  font-weight: bold;
+}
+
+
+ .pic {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 5px solid #49caeb;
+  overflow: hidden;
+ 
+}

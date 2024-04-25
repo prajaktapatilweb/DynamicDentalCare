@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Box, Container, Grid } from "@mui/material";
+import { Container, Grid,Box } from "@mui/material";
 import {  motion } from "framer-motion";
 import Image from "next/image";
 
@@ -50,7 +50,7 @@ export default function Hero() {
   return (
     <div className="heros">
       <Container sx={{marginTop: 10}}>
-        <Grid container spacing={{xs: 4, md:4}}>
+        <Grid container spacing={{xs: 4, md:4}} alignItems='center' justifyContent='center'>
         <Grid item xs={12} md={6}>
       <div className="wrapper">
         <motion.div className="textcontainer" variants={textVariants}
@@ -77,55 +77,34 @@ export default function Hero() {
 
     
                             <Grid item xs={12} md={6}>
-                            <Image src="/images/dr/drs.jpg"   height={100}
+                            {/* <Box className="pic"> */}
+
+<Image src='/images/dr/drs14.jpg' width={300} height={500} alt='testimonials'></Image>
+
+{/* </Box> */}
+                            {/* <Image
+              src="/images/dr/drs.jpg"
+              height={600}
+              width={500}
+              objectFit="contain"
+              // layout="responsive"
+              alt="Feature img"
+              style={{ borderRadius: "50%", border: "5px outset", borderImage: 'linear-gradient(to right, #3e2ecd, #2ecfab) 1' }}
+              ></Image> */}
+                            {/* <Image src="/images/dr/drs.jpg"   height={100}
                                     width={100}
                                     layout="responsive"
                                     objectFit="cover" 
                                     alt="abc">
 
-                                    </Image>
+                                    </Image> */}
 
                              
                                 </Grid>
      
       </Grid>
 
-      <Box
-            sx={{
-              // color: 'primary.contrastText',
-              // p: 5,
-              // bgcolor: '#847266',
-              // m: 1,
-              // borderTopLeftRadius: 3,
-
-              // background:
-              //   'linear-gradient(to right, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%)',
-              // bgcolor: 'primary.main',
-              // flexDirection: { xs: 'column', sm: 'column' },
-              // display: 'flex',
-              // alignItems: 'center',
-              // justifyContent: 'center',
-              // zIndex: 1,
-            }}
-          >
-            <div className='imgbox'>
-              <div className='content'>
-                <Avatar
-                  src="/images/dr/drs.jpg"
-                  sx={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    height: '100%',
-                    width: '100%',
-                    objectFit: 'cover',
-                    transition: 0.5,
-                  }}
-                />
-              </div>
-            </div>
-            
-          </Box>
+      
 
       </Container>
      

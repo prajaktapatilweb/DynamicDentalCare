@@ -67,7 +67,7 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar position="static" sx={{ backgroundColor: '#000000' }}>
+        <AppBar position="static" sx={{ backgroundColor: 'white', color: 'black' }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters sx={{ p: 1 }}>
                     {/* <Image src='/images/logo1.jpg' width={200} height={120} ></Image> */}
@@ -148,7 +148,7 @@ function ResponsiveAppBar() {
                             )}
                         </Menu>
                     </Box>
-                    <Image src='/images/logo1.jpg' width={150} height={100} ></Image>
+                    <Image src='/images/logo/logo1.jpg' width={150} height={100} ></Image>
 
                     {/* dekstop menu */}
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', textDecoration: "none" } }}>
@@ -167,7 +167,7 @@ function ResponsiveAppBar() {
                                             display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex' },
                                             fontWeight: 700,
                                             letterSpacing: '.1rem',
-                                            color: 'White',
+                                            // color: 'White',
                                             textDecoration: 'none',
                                         }} variant='h5'  >Services <KeyboardArrowDown /></Typography>
                                     </MenuItem>
@@ -217,11 +217,12 @@ function ResponsiveAppBar() {
                                         display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex' },
                                         fontWeight: 700,
                                         letterSpacing: '.1rem',
-                                        color: 'White',
+                                        // color: 'White',
                                         textDecoration: 'none',
+                                        float: 'right'
                                     }}>
-                                        <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                            <Typography variant='h5' sx={{ fontSize: { md: 15, lg: 16, xl: 19 }, mx: { md: 0, lg: 0, xl: 2 }, }}>
+                                        <MenuItem key={page} onClick={handleCloseNavMenu} >
+                                            <Typography variant='h5' sx={{ fontSize: { md: 15, lg: 16, xl: 16 }, }}>
                                                 {page.label}</Typography>
                                         </MenuItem>
                                     </Link>)

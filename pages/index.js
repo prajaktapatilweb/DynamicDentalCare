@@ -16,17 +16,22 @@ import Dentalservices from '../components/home/Dentalservices';
 import DrAkshay from '../components/home/DrAkshay';
 import Contact from '../components/home/Contact';
 import Blog from '../components/Blog';
+import SlideBasicThree from '../components/SlideBasicThree';
+import { heroPhotoList } from '../components/constant/Photoslider';
+import Hero from '../components/home/heroadd/Hero1';
 const Testimonial = lazy(() => import('../components/home/Testimonial'))
 
 export default function Home() {
   return (
     <>
-      <HomeHero />
-      <Countdown />
+      <SlideBasicThree data={heroPhotoList}></SlideBasicThree>
       <Clinicinfo />
+      {/* <HomeHero /> */}
+
       <Dentalservices></Dentalservices>
-      <DrAkshay></DrAkshay>
-      <Drsudnya />
+      <Hero></Hero>
+
+      {/* <DrAkshay></DrAkshay> */}
       <Suspense fallback=
         {<div>Component are loading please wait...</div>}>
         <Photogallery />

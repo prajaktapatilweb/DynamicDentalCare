@@ -9,6 +9,9 @@ import AppTextField from '../Formik/AppTextField';
 import { Button, FormControl, Grid, InputLabel } from '@mui/material';
 import CustomizedSelectFormik from '../Formik/CustomizedSelectFormik';
 import { useRouter } from 'next/router';
+import CallTwoToneIcon from "@mui/icons-material/CallTwoTone";
+import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const All = [
   { key: 1, text: 'Braces/ aligners', value: 'Braces/ aligners' },
@@ -66,183 +69,181 @@ const Contact = () => {
   };
 
   return (
-    <Box id='contactform' sx={{ backgroundColor: '#f1efeb', py: { xs: 7, md: 7 } }}>
+    <Box id='contactform' sx={{ backgroundColor: '#f3fbfd' }}>
       <Container >
-        <Typography variant="h1" sx={{
-          fontSize: { xs: 30, md: 35 }, pb: {
-            xs: 3,
-            md: 3,
-          },
-        }} gutterBottom>
-          Connect with Our Expert Dentists in Chembur
+        {/* <!-- ======= Contact Section ======= --> */}
+        <section id="contact" class="contact">
+          <div class="container">
 
-        </Typography>
-        <Card
-          className='box2'
-          sx={{
-            backgroundColor: 'white',
+            <div class="section-title">
+              <h2>Contact</h2>
+              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
 
-            borderRadius: 10,
-            py: { xs: 4, md: 10 },
-            px: { xs: 4, md: 8 },
-            textAlign: 'center',
-          }}>
+          </div>
 
-          {/* <Box sx={{
-          // backgroundColor: 'secondary.main',
-          borderRadius: 10,
-          py: { xs: 4, md: 10 },
-          px: { xs: 4, md: 8 },
-          textAlign: 'center',
-        }}> */}
-          <Formik
-            validateOnChange={true}
-            initialValues={{
-              name: '',
-              email: '',
-              mobilenumber: '',
-              msg: '',
-              selection: ''
-            }}
-            validationSchema={validationSchema}
-            onSubmit={onSubmit}
-          >
-            {({ initialValues, values, errors, isSubmitting }) => (
-              <Form style={{ textAlign: 'left' }}>
-                <Grid container spacing={2}>
-                  <Grid item xs={12} md={6}>
-                    <AppTextField
-                      placeholder='name'
-                      name='name'
-                      label='Name'
-                      sx={{
-                        width: '100%',
-                        '& .MuiInputBase-input': {
-                          fontSize: 14,
-                        },
-                      }}
-                      variant='outlined'
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <AppTextField
-                      placeholder='Email'
-                      name='email'
-                      label='Email ID'
-                      sx={{
-                        width: '100%',
-                        '& .MuiInputBase-input': {
-                          fontSize: 14,
-                        },
-                      }}
-                      variant='outlined'
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <AppTextField
-                      placeholder='Mobile Number'
-                      name='mobilenumber'
-                      label='Mobile Number'
-                      sx={{
-                        width: '100%',
-                        '& .MuiInputBase-input': {
-                          fontSize: 14,
-                        },
-                      }}
-                      variant='outlined'
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <FormControl
-                      sx={{
-                        width: '100%',
-                        // mt: 2,
-                        '&.MuiInputBase-input': { fontSize: 14 },
-                      }}
-                    >
-                      <InputLabel id='demo-simple-select-label'>
-                        Select your interest
-                      </InputLabel>
-                      <Field
-                        name='selection'
-                        as='select'
-                        options={All}
-                        component={CustomizedSelectFormik}
-                      ></Field>
-                    </FormControl>
-                  </Grid>
-                  <Grid item xs={12} >
-                    <Box sx={{ mb: { xs: 5, lg: 8 } }}>
-                      <AppTextField
-                        placeholder='Message'
-                        name='msg'
-                        label='Message'
-                        sx={{
-                          width: '100%',
-                          '& .MuiInputBase-input': {
-                            fontSize: 14,
-                          },
-                        }}
-                        variant='outlined'
-                        multiline
-                        rows='2'
-                      />
-                    </Box>
-                  </Grid>
+          {/* <div>
+            <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+          </div> */}
+
+
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+
+              <Grid container spacing={2}>
+                <Grid item xs={12} md={12}>
+                  <div class="info-box" style={{ background: '#ffffff' }}>
+
+                    <i class="bx"><LocationOnIcon /></i>
+                    <h3>Our Address</h3>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                  </div>
                 </Grid>
-                {/* <pre>{JSON.stringify(errors, null, 4)}</pre> */}
-                {/* <pre>{JSON.stringify(values, null, 4)}</pre> */}
+                <Grid item xs={12} md={6}>
+                  <div class="info-box mt-4" style={{ background: '#ffffff' }}>
+                    <i class="bx"><EmailTwoToneIcon style={{ color: '#49caeb' }}></EmailTwoToneIcon></i>
+                    <h3>Email Us</h3>
+                    <p>info@example.com<br />contact@example.com</p>
+                  </div>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                  <div class="info-box mt-4" style={{ background: '#ffffff' }}>
+                    {/* <IconButton aria-label="phone" style={{ color: '#49caeb' }}> */}
+                    <i class="bx">
+                      <CallTwoToneIcon style={{ color: '#49caeb' }} />
+                    </i>
+                    {/* </IconButton> */}
+                    <h3>Call Us</h3>
+                    <p>+1 5589 55488 55<br />+1 6678 254445 41</p>
+                  </div>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Card sx={{ px: 3, py: 4 }}>
+                <Formik
+                  validateOnChange={true}
+                  initialValues={{
+                    name: '',
+                    email: '',
+                    mobilenumber: '',
+                    msg: '',
+                    selection: ''
+                  }}
+                  validationSchema={validationSchema}
+                  onSubmit={onSubmit}
+                >
+                  {({ initialValues, values, errors, isSubmitting }) => (
+                    <Form style={{ textAlign: 'left' }}>
+                      <Grid container spacing={2}>
+                        <Grid item xs={12} md={6}>
+                          <AppTextField
+                            placeholder='name'
+                            name='name'
+                            label='Name'
+                            sx={{
+                              width: '100%',
+                              '& .MuiInputBase-input': {
+                                fontSize: 14,
+                              },
+                            }}
+                            variant='outlined'
+                          />
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                          <AppTextField
+                            placeholder='Email'
+                            name='email'
+                            label='Email ID'
+                            sx={{
+                              width: '100%',
+                              '& .MuiInputBase-input': {
+                                fontSize: 14,
+                              },
+                            }}
+                            variant='outlined'
+                          />
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                          <AppTextField
+                            placeholder='Mobile Number'
+                            name='mobilenumber'
+                            label='Mobile Number'
+                            sx={{
+                              width: '100%',
+                              '& .MuiInputBase-input': {
+                                fontSize: 14,
+                              },
+                            }}
+                            variant='outlined'
+                          />
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                          <FormControl
+                            sx={{
+                              width: '100%',
+                              // mt: 2,
+                              '&.MuiInputBase-input': { fontSize: 14 },
+                            }}
+                          >
+                            <InputLabel id='demo-simple-select-label'>
+                              Select your interest
+                            </InputLabel>
+                            <Field
+                              name='selection'
+                              as='select'
+                              options={All}
+                              component={CustomizedSelectFormik}
+                            ></Field>
+                          </FormControl>
+                        </Grid>
+                        <Grid item xs={12} >
+                          <Box sx={{ mb: { xs: 5, lg: 8 } }}>
+                            <AppTextField
+                              placeholder='Message'
+                              name='msg'
+                              label='Message'
+                              sx={{
+                                width: '100%',
+                                '& .MuiInputBase-input': {
+                                  fontSize: 14,
+                                },
+                              }}
+                              variant='outlined'
+                              multiline
+                              rows='2'
+                            />
+                          </Box>
+                        </Grid>
+                      </Grid>
+                      {/* <pre>{JSON.stringify(errors, null, 4)}</pre> */}
+                      {/* <pre>{JSON.stringify(values, null, 4)}</pre> */}
 
-                <div>
-                  <Button
-                    variant='contained'
-                    color='primary'
-                    disabled={isSubmitting}
-                    sx={{
-                      // fontWeight: Fonts.REGULAR,
-                      textTransform: 'capitalize',
-                      fontSize: 16,
-                      minWidth: 160,
-                    }}
-                    type='submit'
-                  >
-                    Submit
-                  </Button>
-                </div>
-              </Form>
-            )}
-          </Formik>
-          {/* <Typography variant="h1" component="h2" sx={{ mb: 1, fontSize: { xs: 32, md: 42 } }}>
-            Subscribe to Our News Letter
-          </Typography>
-          <Typography sx={{ mb: 6 }}>Subscribe to our newsletter to get information about our courses.</Typography>
+                      <div>
+                        <Button
+                          variant='contained'
+                          color='primary'
+                          disabled={isSubmitting}
+                          sx={{
+                            // fontWeight: Fonts.REGULAR,
+                            textTransform: 'capitalize',
+                            fontSize: 16,
+                            minWidth: 160,
+                          }}
+                          type='submit'
+                        >
+                          Submit
+                        </Button>
+                      </div>
+                    </Form>
+                  )}
+                </Formik>
+              </Card>
+            </Grid>
+          </Grid>
 
-          <Box sx={{
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: { xs: 'column', md: 'row' },
-            justifyContent: 'space-around',
-            width: { xs: '100%', md: 560 },
-            mx: 'auto',
-        }}>
-            <InputBase sx={{
-            backgroundColor: 'background.paper',
-            borderRadius: 3,
-            width: '100%',
-            height: 48,
-            px: 2,
-            mr: { xs: 0, md: 3 },
-            mb: { xs: 2, md: 0 },
-        }} 
-        placeholder="Enter your Email Address"></InputBase>
-            <Box>
-              <StyledButton disableHoverEffect size="large" onClick={onSubmit} >
-                Subscribe
-              </StyledButton>
-            </Box>
-          </Box> */}
-          {/* </Box> */}
-        </Card>
+        </section>
+        {/* <!-- End Contact Section --> */}
       </Container>
     </Box>
   );

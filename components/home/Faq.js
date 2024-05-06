@@ -5,7 +5,6 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Container, Box } from '@mui/material';
-import FAQCommon from './FAQCommon';
 
 export default function Faq() {
     var Details = [
@@ -29,11 +28,9 @@ export default function Faq() {
     ]
     return (
         <div>
-            <FAQCommon data={Details} />
-            {/* <Box id="faq" sx={{
-                py: { xs: 7, md: 7 }, backgroundColor: '#f8f8f8'
+            <Box id="faq" sx={{
+                py: { xs: 7, md: 7 }, backgroundColor: '#fafafa'
             }}>
-
                 <Container maxWidth="lg" >
                     <Typography variant="h1" sx={{
                         fontSize: { xs: 30, md: 35 }, pb: {
@@ -50,19 +47,18 @@ export default function Faq() {
                                 aria-controls="panel1a-content"
                                 id="panel1a-header"
                             >
-                                <Typography fontWeight='bold'>{item.quest}</Typography>
+                                <Typography fontWeight='bold'>{item.Q}</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography>
-                                    {item.answ}
+                                    {item.A}
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
                     ))}
-
-
                 </Container>
-            </Box> */}
+            </Box>
+
         </div>
 
 

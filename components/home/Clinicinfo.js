@@ -135,7 +135,6 @@ const Clinicinfo = () => {
                                 </p>
                             </Grid>
                         </Grid>
-                        <Countdown />
 
                     </Container>
                 </section>

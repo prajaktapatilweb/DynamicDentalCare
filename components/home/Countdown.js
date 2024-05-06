@@ -34,13 +34,24 @@ export default function Countdown() {
     return (
         <div>
             <Box>
-                <Grid container spacing={2} sx={{ my: 5 }}>
+                <Grid container spacing={2} sx={{ mb: 7, height: '100%' }}>
                     {Details.map((item, i) => (
                         <Grid item xs={12} sm={12} md={3} key={i} alignItems='center' justifyContent='center' textAlign='center'>
-                            <Card sx={{ p: 3, boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}>
+                            <Card sx={{
+                                background: 'rgba( 0, 0, 0, 0.3 )',
+                                boxShadow: ' 0 10px 10px 1px #0000001f',
+                                backdropFilter: 'blur( 8px )',
+                                // -webkitBackdropFilter: blur( 2px );
+                                // borderRadius: 3,
+                                border: '1px solid #ffffff36',
+                                p: 5,
+                                mx: { xs: 5, sm: 5, md: 0 }
+                                // background: #00000038;
+
+                            }}>
                                 <Typography
                                     sx={{
-                                        color: "#49caeb",
+                                        color: "white",
                                         // mb: { xs: 1, md: 2 },
                                         fontSize: { xs: 34, md: 40 },
                                         fontWeight: "bold",
@@ -49,7 +60,7 @@ export default function Countdown() {
                                 >
                                     <CountUp end={item.numbers} duration={5} start={200} />+
                                 </Typography>
-                                <Typography color="black" variant="h5">
+                                <Typography color="#49caeb" variant="h5">
                                     {item.title}
                                 </Typography>
                             </Card>

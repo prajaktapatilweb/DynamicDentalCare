@@ -24,9 +24,10 @@ const Testimonial = lazy(() => import('../components/home/Testimonial'))
 export default function Home() {
   return (
     <>
-      <SlideBasicThree data={heroPhotoList}></SlideBasicThree>
-      <Clinicinfo />
       {/* <HomeHero /> */}
+
+      {/* <SlideBasicThree data={heroPhotoList}></SlideBasicThree> */}
+      <Clinicinfo />
 
       <Dentalservices></Dentalservices>
       <Hero></Hero>

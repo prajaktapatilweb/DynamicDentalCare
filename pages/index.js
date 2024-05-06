@@ -30,7 +30,7 @@ export default function Home() {
       <Clinicinfo />
 
       <Dentalservices></Dentalservices>
-      <Hero></Hero>
+      {/* <Hero></Hero> */}
 
       <DrAkshay></DrAkshay>
       <Suspense fallback=

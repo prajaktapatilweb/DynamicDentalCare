@@ -240,7 +240,7 @@ function ResponsiveAppBar() {
             </section>
             <section style={{
                 background: '#121f38', width: '100%', padding: 3, background: '#121f38',
-                background: 'rgba( 0, 0, 0, 0.3 )',
+                background: 'rgba( 0, 0, 0, 0.2 )',
                 boxShadow: ' 0 10px 10px 1px #0000001f',
                 backdropFilter: 'blur( 8px )',
                 textAlign: 'center', justifyContent: 'center', alignItems: 'center',

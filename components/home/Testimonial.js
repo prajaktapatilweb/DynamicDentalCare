@@ -44,9 +44,10 @@ const StyledDots = styled("ul")(({ theme }) => ({
     "&.slick-dots": {
         position: "absolute",
         left: 0,
-        bottom: -20,
-        paddingLeft: theme.spacing(1),
-        textAlign: "left",
+
+
+        // paddingLeft: theme.spacing(1),
+        textAlign: "center",
         "& li": {
             marginRight: theme.spacing(2),
             "&.slick-active>div": {
@@ -71,11 +72,11 @@ const Testimonial = () => {
         customPaging: () => (
             <Box
                 sx={{
-                    height: 8,
-                    width: 30,
+                    height: 15,
+                    width: 15,
                     backgroundColor: "divider",
                     display: "inline-block",
-                    borderRadius: 4,
+                    borderRadius: '50%',
                 }}
             />
         ),
@@ -88,16 +89,18 @@ const Testimonial = () => {
                 backgroundColor: "#fafafa",
             }}
         >
-            <Container maxWidth="lg">
-                <Typography variant="h1" sx={{ fontSize: { xs: 30, md: 35 } }}>
-                    What Our Clients Say
-                </Typography>
-
+            <Container>
+                <div class="section-title">
+                    <h2>Testimonials</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
                 <Slider {...sliderConfig}>
                     {data.map((item) => (
                         <MentorCardItem key={String(item.id)} item={item} />
                     ))}
                 </Slider>
+
+
             </Container>
         </Box>
     );

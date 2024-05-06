@@ -34,13 +34,14 @@ export default function Equipment() {
             <Box
                 sx={{
                     py: { xs: 6, md: 6 },
-                    backgroundColor: "#f1efeb",
+                    backgroundColor: "#f3fbfd",
                 }}
             >
-                <Container maxWidth="lg">
-                    <Typography variant="h1" sx={{ pb: 3, fontSize: { xs: 30, md: 35 } }}>
-                        Equipments
-                    </Typography>
+                <Container>
+                    <div class="section-title">
+                        <h2>Equipments</h2>
+                    </div>
+
                     <Grid container spacing={1}>
                         {Details.map((item, i) => (
                             <Grid item xs={12} md={3} key={i}>
@@ -50,6 +51,7 @@ export default function Equipment() {
                                             p: 1,
                                             backgroundColor: "background.paper",
                                             borderRadius: 4,
+                                            boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px',
                                             transition: (theme) =>
                                                 theme.transitions.create(["box-shadow"]),
                                             "&:hover": {

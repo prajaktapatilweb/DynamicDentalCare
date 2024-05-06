@@ -86,18 +86,15 @@ const Photogallery = () => {
       id="gallery"
       sx={{
         py: { xs: 7, md: 7 },
-        backgroundColor: "#f1efeb",
+        backgroundColor: "#f7fcfc",
       }}
     >
       <Container maxWidth="lg">
-        <Typography
-          variant="h1"
-          sx={{
-            fontSize: { xs: 30, md: 35 },
-          }}
-        >
-          Capturing Dental Care
-        </Typography>
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
 
         <Slider {...sliderConfig}>
           {/* {data.map((item) => (<PhotoCardItem key={String(item.id)} item={item} />))} */}
@@ -106,6 +103,7 @@ const Photogallery = () => {
           ))}
         </Slider>
       </Container>
+
     </Box>
   );
 };

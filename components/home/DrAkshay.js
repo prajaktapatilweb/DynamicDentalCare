@@ -9,7 +9,12 @@ import ListItem from "@mui/material/ListItem";
 import StarIcon from "@mui/icons-material/Star";
 import { StyledButton } from "../styled-button";
 import { motion } from "framer-motion";
-import { Link } from "@mui/material";
+import { Card, Link } from "@mui/material";
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import { CardActionArea } from '@mui/material';
+import FileDownloadDoneIcon from '@mui/icons-material/FileDownloadDone';
+
 
 const DrAkshay = () => {
   const variants = {
@@ -22,7 +27,7 @@ const DrAkshay = () => {
   const Lists = motion(List);
   const ListItems = motion(ListItem);
   const explist = [
-    "10+ Years of experience dfd er",
+    "10+ Years of experience",
     "Experienced Prosthodontist",
     "Government Dental College Alumni",
     "Comprehensive Treatment Solutions",
@@ -32,69 +37,47 @@ const DrAkshay = () => {
   return (
     <Box sx={{ py: { xs: 7, md: 7 }, backgroundColor: "background.paper" }}>
       <Container>
-        <Grid container spacing={3} alignItems="center" justifyContent="center">
-          <Grid item xs={12} sm={5}>
-            <Image
-              src="/images/dr/dr12.jpg"
-              height={100}
-              width={100}
-              layout="responsive"
-              alt="Feature img"
-              style={{ borderRadius: "50%", border: "5px  black outset" }}
-            // className="dranim"
-            ></Image>
+
+        <div class="section-title">
+          <h2>Doctors</h2>
+          <p>Magnam dolores commodi suscipit.   Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+        <Grid container spacing={3} alignItems="center" justifyContent="center" textAlign='center'>
+          <Grid item xs={12} sm={4}>
+            <Card sx={{ background: '#f0fafa', boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px' }}>
+              {/* <CardActionArea> */}
+              <CardMedia
+                component="img"
+                height="100%"
+                image="/images/dr/dr013.jpg"
+                alt="green iguana"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  <h4 style={{
+                    fontWeight: 700,
+                    marginBottom: '5px',
+                    fontSize: '18px',
+                    color: '#555555'
+                  }}>Walter White</h4>
+                  {/* <span>Chief Medical Officer</span> */}
+                </Typography>
+
+              </CardContent>
+              {/* </CardActionArea> */}
+            </Card>
+
           </Grid>
           <Grid item xs={12} sm={7}>
-            <Typography
-              component="h2"
-              sx={{
-                position: "relative",
-                fontSize: { xs: 40, md: 45 },
-                ml: { xs: 0, md: 4 },
-                mt: 2,
-                mb: 3,
-                lineHeight: 1,
-                fontWeight: "bold",
-              }}
-            >
-              Meet{" "}
-              <Typography
-                component="mark"
-                sx={{
-                  position: "relative",
-                  color: "#0b1341",
-                  // color: 'primary.main',
-                  fontSize: "inherit",
-                  fontWeight: "inherit",
-                  backgroundColor: "unset",
-                }}
-              >
-                Dr. Akshay Bandewar <br />
-                <Box
-                  sx={{
-                    position: "absolute",
-                    top: { xs: 20, md: 28 },
-                    transform: "rotate(184deg)",
-                    left: 2,
-                    "& img": { width: { xs: 140, md: 175 }, height: "auto" },
-                  }}
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/headline-curve.svg"
-                    alt="Headline curve"
-                  ></img>
-                </Box>
-              </Typography>
-            </Typography>
 
-            <Typography
-              variant="body1"
-              sx={{
+            <h4
+
+              style={{
                 color: "black",
+                fontWeight: '400',
                 textAlign: "justify",
-                mb: 2,
-                ml: { xs: 0, md: 4 },
+                marginLeft: 15
+
               }}
             >
               Meet Dr. Akshay, the Founder of Dr. Akshay's DentAvenue Dental
@@ -106,23 +89,20 @@ const DrAkshay = () => {
               Dentures, Laminates, and Veneers. If you're looking for a skilled
               dentist near me, Dr. Akshay is your go-to expert. He also served
               as an ex-assistant professor at Government Dental College, Mumbai.
-            </Typography>
-
-            <Lists initial="hidden" animate="visible" variants={variants}>
+            </h4>
+            <List sx={{ mt: -2, mb: 2 }}>
               {explist.map((item, i) => (
-                <ListItems
-                  variants={variants}
+                <ListItem
                   key={item}
-                  custom={i}
-                  sx={{ marginLeft: 3 }}
                 >
-                  <StarIcon sx={{ fontSize: 15, marginRight: 2 }} />
+                  <FileDownloadDoneIcon sx={{ fontSize: 18, marginRight: 1, color: '#49caeb' }} />
                   {item}
-                </ListItems>
+                </ListItem>
               ))}
-            </Lists>
+            </List>
 
-            <Box sx={{ "& button": { mr: 2, ml: 4, mt: 3 } }}>
+
+            <Box textAlign='left' sx={{ ml: 3 }}>
               {/* <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350}> */}
 
               <StyledButton color="primary" size="large" variant="contained">
@@ -138,6 +118,7 @@ const DrAkshay = () => {
             </Box>
           </Grid>
         </Grid>
+
       </Container>
     </Box>
   );

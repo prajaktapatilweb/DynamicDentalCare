@@ -18,6 +18,7 @@ import ListItem from "@mui/material/ListItem";
 import StarIcon from "@mui/icons-material/Star";
 import FileDownloadDoneIcon from '@mui/icons-material/FileDownloadDone';
 import Countdown from "./Countdown";
+import typography from "../../config/theme/typography";
 
 
 const explist = [
@@ -95,7 +96,6 @@ const Clinicinfo = () => {
         <>
 
             {/* <!-- ======= About Us Section ======= --> */}
-            <main id="main">
                 <section id="about" class="about" style={{ background: 'white' }}>
                     <Container>
 
@@ -112,10 +112,9 @@ const Clinicinfo = () => {
                                 {/* <img src="/images/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" class="img-fluid" alt="" /> */}
                             </Grid>
                             <Grid item xs={12} md={6} textAlign='justify'>
-                                <h1>Dynamic Dental Care - Best dentist in Thane</h1>
-                                <p class="fst-italic">
+                                <Typography variant="h1" > Best Dentist in Thane</Typography>
+                                <p class="fst-italic" style={{marginTop:4,marginBottom:0}}>
                                     Welcome to Dynamic Dental Care and Implant Centre, your trusted destination for top-quality dental care in Airoli, Navi Mumbai, and Thane West. Founded by Dr. Anuj Mishra, a renowned Dental Surgeon and Implantologist, and co-founded by Dr. Shweta Mishra, our clinic is committed to delivering excellence in dental services.
-
                                 </p>
                                 <List>
                                     {explist.map((item, i) => (
@@ -138,7 +137,6 @@ const Clinicinfo = () => {
 
                     </Container>
                 </section>
-            </main>
         </>
     );
 };

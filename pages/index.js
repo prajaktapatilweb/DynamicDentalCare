@@ -28,7 +28,6 @@ export default function Home() {
 
       {/* <SlideBasicThree data={heroPhotoList}></SlideBasicThree> */}
       <Clinicinfo />
-      otrirko nikykrtoyirtop
       <Dentalservices></Dentalservices>
       {/* <Hero></Hero> */}
 

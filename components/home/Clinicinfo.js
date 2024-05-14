@@ -21,12 +21,13 @@ import Countdown from "./Countdown";
 
 
 const explist = [
-    "10+ Years of experience dfd er",
-    "Experienced Prosthodontist",
-    "Government Dental College Alumni",
-    "Comprehensive Treatment Solutions",
-    "Specialized in Implants and FMR",
-    "Former Assistant Professor",
+    'Experienced team of professionals dedicated to improving and maintaining your oral health.',
+    'Comprehensive range of services, including preventive dentistry, root canal treatment, and dental implants.',
+    'Utilization of the latest advancements in dental technology for precise diagnoses and efficient treatments.',
+    'Warm and welcoming environment ensuring patient comfort and relaxation throughout their dental journey.',
+    'Specialization in children\'s dentistry for a positive dental experience for young patients.',
+    'Skilled dental surgeon providing advanced dental treatments to address diverse oral health needs.',
+
 ];
 const Clinicinfo = () => {
     const text = "Dynamic Dental Care - Best dentist in Thane";
@@ -113,9 +114,8 @@ const Clinicinfo = () => {
                             <Grid item xs={12} md={6} textAlign='justify'>
                                 <h1>Dynamic Dental Care - Best dentist in Thane</h1>
                                 <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                    magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                    magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    Welcome to Dynamic Dental Care and Implant Centre, your trusted destination for top-quality dental care in Airoli, Navi Mumbai, and Thane West. Founded by Dr. Anuj Mishra, a renowned Dental Surgeon and Implantologist, and co-founded by Dr. Shweta Mishra, our clinic is committed to delivering excellence in dental services.
+
                                 </p>
                                 <List>
                                     {explist.map((item, i) => (
@@ -129,9 +129,9 @@ const Clinicinfo = () => {
                                 </List>
 
                                 <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    {/* Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                                     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum
+                                    culpa qui officia deserunt mollit anim id est laborum */}
                                 </p>
                             </Grid>
                         </Grid>

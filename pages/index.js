@@ -20,6 +20,7 @@ import SlideBasicThree from '../components/SlideBasicThree';
 import { heroPhotoList } from '../components/Constant/Photoslider';
 import Hero from '../components/home/heroadd/Hero1';
 import LabTabs from '../components/home/LabTabs';
+import { Container } from '@mui/material';
 const Testimonial = lazy(() => import('../components/home/Testimonial'))
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
 
       {/* <SlideBasicThree data={heroPhotoList}></SlideBasicThree> */}
       <LabTabs></LabTabs>
+     <Container>hello everybody</Container> 
       {/* <Clinicinfo /> */}
       <Dentalservices></Dentalservices>
       {/* <Hero></Hero> */}

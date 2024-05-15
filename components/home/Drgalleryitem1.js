@@ -6,7 +6,7 @@ const Drgalleryitem1 = ({ item }) => {
     return (
         <Box sx={{
             px: 1,
-            py: 4,
+            // py: 4,
         }}>
             <Box sx={{
                 p: 1,

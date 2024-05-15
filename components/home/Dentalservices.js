@@ -95,8 +95,8 @@ const Dentalservices = () => {
         <Grid container spacing={2}>
           <Grid item xs={12} md={12}>
             <div class="section-title">
-              <h2>Services</h2>
-              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+              <h2>Smile Solutions Hub</h2>
+              <p style={{marginTop:-5}}> Crafting Your Dream Smile: Our Range of Expert Services</p>
             </div>
 
           </Grid>

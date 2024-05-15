@@ -130,9 +130,8 @@ const Clinicinfo = () => {
                                 </List>
 
                                 <p>
-                                    {/* Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum */}
+                                Experience the difference at Dynamic Dental Care and Implant Centre, where your smile is our priority. Schedule your appointment today for comprehensive and personalized dental care.
+
                                 </p>
                             </Grid>
                         </Grid>

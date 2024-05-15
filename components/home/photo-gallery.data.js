@@ -1,39 +1,25 @@
 export const data = [
     {
         id: 1,
-        cover: '/images/patients/patients11.jpg',
+        cover: '/images/clinicphotos/patient1.jpg',
 
 
     },
     {
         id: 2,
-        cover: '/images/patients/patients22.jpg',
+        cover: '/images/clinicphotos/patient2.jpg',
 
 
     },
     {
         id: 3,
-        cover: '/images/patients/patients3.jpeg',
+        cover: '/images/clinicphotos/patient3.jpg',
 
     },
     {
         id: 4,
-        cover: '/images/patients/patients4.jpeg',
+        cover: '/images/clinicphotos/patient4.jpg',
 
     },
-    {
-        id: 5,
-        cover: '/images/patients/patients5.jpeg',
-
-    },
-    {
-        id: 6,
-        cover: '/images/patients/patients6.jpeg',
-
-    },
-    {
-        id: 7,
-        cover: '/images/patients/patients7.jpeg',
-
-    },
+    
 ];

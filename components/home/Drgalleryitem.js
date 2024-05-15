@@ -6,7 +6,6 @@ const Drgalleryitem = ({ item }) => {
     return (
         <Box sx={{
             px: 1,
-            py: 4,
         }}>
             <Box sx={{
                 p: 1,
@@ -30,6 +29,7 @@ const Drgalleryitem = ({ item }) => {
                         src={`/images/Thane/t/clinic${item}.jpg`}
                         width={100}
                         height={100}
+
                         layout='responsive'></Image>
 
                 </Box>

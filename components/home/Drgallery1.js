@@ -41,7 +41,7 @@ const StyledDots = styled("ul")(({ theme }) => ({
     "&.slick-dots": {
         position: "absolute",
         left: 0,
-        bottom: -20,
+        bottom: -30,
         paddingLeft: theme.spacing(1),
         textAlign: "center",
         "& li": {
@@ -69,11 +69,11 @@ const Drgallery1 = () => {
         customPaging: () => (
             <Box
                 sx={{
-                    height: 8,
-                    width: 30,
+                    height: 15,
+                    width: 15,
                     backgroundColor: "divider",
                     display: "flex",
-                    borderRadius: 4,
+                    borderRadius: 50,
                 }}
             />
         ),

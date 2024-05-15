@@ -17,12 +17,12 @@ export default function Countdown() {
             title: "Crown & Bridges",
         },
         {
-            numbers: "3500",
+            numbers: "1000",
             title: "Dental Implants",
         },
 
         {
-            numbers: "1500",
+            numbers: "5000",
             title: " Root Canal",
         },
         {

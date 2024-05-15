@@ -5,52 +5,58 @@ export const data = [
     {
         id: 1,
         cover: '/images/services/rootcanal5.jpg',
-        title: 'Root Canal',
-        price: <span>Find relief from pain and preserve your natural tooth with our expert <Link href='https://www.dentavenue.in/services/root-canals-in-chembur' sx={{ color: '#551a8b' }}> root canal treatments in Chembur.</Link></span>
+        title: 'General Dentistry',
+        price: <span>Our general dentistry services encompass routine check-ups, cleanings, and treatments for common dental issues, ensuring your oral health is in top condition.
+        </span>
 
     },
     {
         id: 2,
         cover: '/images/services/teethimplant3.jpg',
-        title: 'Dental Implant',
-        price: <span>Restore your smile with confidence through our advanced <Link href="https://www.dentavenue.in/services/dental-implants-in-chembur" sx={{ color: '#551a8b' }}> dental implant solutions </Link> near you.</span>,
+        title: 'Cosmetic Dentistry',
+        price: <span>Transform your smile with our cosmetic dentistry services, including teeth whitening, veneers, and smile makeovers, tailored to enhance your confidence and appearance.
+        </span>,
 
     },
     {
         id: 3,
         cover: '/images/services/fullconstr2.jpg',
-        title: 'Full Mouth Reconstruction',
-        price: "Regain optimal oral health and function with our comprehensive full mouth reconstruction treatments in Chembur.",
+        title: 'Dental Implants',
+        price: "Restore missing teeth with dental implants, the gold standard in tooth replacement, providing a durable and natural-looking solution for a complete smile.",
 
     },
     {
         id: 4,
         cover: '/images/services/braces2.jpg',
-        title: 'Braces & Aligners',
-        price: <span>Achieve a straighter smile and improved bite with our customized <Link href='https://www.dentavenue.in/services/teeth-braces-in-chembur' sx={{ color: '#551a8b' }}> braces and aligner options</Link> near you.</span>,
+        title: 'Orthodontics',
+        price: <span>Straighten your teeth and correct bite issues with our orthodontic treatments, including traditional braces and clear aligners, for a beautifully aligned smile.
+        </span>,
 
     },
     {
         id: 5,
         cover: '/images/services/bridges1.jpg',
-        title: 'Crown & Bridges',
+        title: 'Root Canal Therapy',
 
-        price: <span>Regain the strength, function, and aesthetics of your teeth with our high-quality <Link href='https://www.dentavenue.in/services/crown-and-bridges-treatment-in-chembur' sx={{ color: '#551a8b' }}> crown and bridge treatments in Chembur</Link>.</span>,
+        price: <span>Save infected or damaged teeth with root canal therapy, a pain-relieving procedure that preserves your natural teeth and prevents further oral health complications.
+        </span>,
 
     },
     {
         id: 6,
         cover: '/images/services/teethwhite2.jpg',
-        title: 'Teeth Whitening',
-        price: <span>Enhance your smile's brilliance and beauty with our effective <Link href='https://www.dentavenue.in/services/teeth-whitening-in-chembur' sx={{ color: '#551a8b' }}> teeth whitening solutions</Link> near you.</span>,
+        title: 'Periodontal Care',
+        price: <span>Maintain healthy gums with our periodontal care services, including deep cleanings and treatments for gum disease, ensuring the foundation of your smile remains strong.
+        </span>,
 
     },
     {
         id: 7,
         cover: '/images/services/dentistry2.jpg',
-        title: 'Pediatric Dentistry',
+        title: 'Oral Surgery',
 
-        price: <span>Ensure your child's dental health with our gentle and specialized <Link href='https://www.dentavenue.in/services/kids-dentist-in-chembur' sx={{ color: '#551a8b' }}> pediatric dental care in Chembur</Link>.</span>,
+        price: <span>From tooth extractions to wisdom teeth removal, our oral surgery procedures are performed with precision and care to address various dental concerns effectively.
+        </span>,
 
     },
 
@@ -58,15 +64,9 @@ export const data = [
     {
         id: 8,
         cover: '/images/services/veeners1.jpg',
-        title: 'Dental Veneers',
-        price: 'Transform your smile with dental veneers, the perfect solution for a stunning and confident appearance near you.',
+        title: 'Pediatric Dentistry',
+        price: 'Ensure your child\'s oral health with our pediatric dentistry services, focused on preventive care, early intervention, and creating a positive dental experience for young patients.',
 
     },
-    {
-        id: 9,
-        cover: '/images/services/wisdomteeth1.jpg',
-        title: 'Wisdom Teeth Extraction',
-        price: <span>Trust our experienced team for safe and comfortable <Link href='https://www.dentavenue.in/services/tooth-extraction-in-chembur' sx={{ color: '#551a8b' }}>wisdom teeth extraction</Link> or any other tooth extraction needs in Chembur.</span>,
-
-    },
+  
 ];

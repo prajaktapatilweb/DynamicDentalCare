@@ -6,6 +6,7 @@ import { IconButton, useMediaQuery } from "@mui/material";
 import IconArrowBack from "@mui/icons-material/ArrowBack";
 import IconArrowForward from "@mui/icons-material/ArrowForward";
 import Drgalleryitem from "./Drgalleryitem";
+import Drgalleryitem1 from "./Drgalleryitem1";
 const SliderArrow = (props) => {
     const { onClick, type, className } = props;
     return (
@@ -51,7 +52,7 @@ const StyledDots = styled("ul")(({ theme }) => ({
         },
     },
 }));
-const Drgallery = () => {
+const Drgallery1 = () => {
     const { breakpoints } = useTheme();
     const matchMobileView = useMediaQuery(breakpoints.down("md"));
     const sliderConfig = {
@@ -83,12 +84,12 @@ const Drgallery = () => {
 
             <Slider {...sliderConfig}>
                 {/* {data.map((item) => (<PhotoCardItem key={String(item.id)} item={item} />))} */}
-                {[...Array(3)].slice(0).map((e, i) => (
-                    <Drgalleryitem key={i} item={i + 1} />
+                {[...Array(4)].slice(0).map((e, i) => (
+                    <Drgalleryitem1 key={i} item={i + 1} />
                 ))}
             </Slider>
 
         </Box>
     );
 };
-export default Drgallery;
+export default Drgallery1;

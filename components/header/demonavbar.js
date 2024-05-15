@@ -489,7 +489,7 @@ function ResponsiveAppBar() {
                                 sx={{
                                     // width: { md: 850 },
                                     position: "relative",
-                                    fontSize: { xs: 35, md: 40, lg: 45 },
+                                    fontSize: { xs: 35, md: 40, lg: 40 },
                                     mb: { xs: 3, sm: 2 },
                                     letterSpacing: 1.5,
                                     fontWeight: "bold",
@@ -498,7 +498,7 @@ function ResponsiveAppBar() {
                                 }}
                             >
                                 {" "}
-                                Exceptional Service Soft & Gental
+                                Your Journey to Dental Wellness Starts Here!
                             </Typography>
                             <Typography
                                 component="span"
@@ -517,7 +517,7 @@ function ResponsiveAppBar() {
                                     },
                                 }}
                             >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at tortor a nisl placerat auctor.<br></br> Quisque porttitor, mauris  vehicula, arcu dui eleifend metus, a tristique erat velit eget dolor.
+                               Step into Dynamic Dental Care and Implant Centre, your premier destination for top-tier dental solutions in Airoli, and Thane West.<br></br> Experience personalized care and cutting-edge techniques for radiant smiles.
                             </Typography>
 
                             <Box sx={{ "& button": { mt: 4, mb: 7 } }}>
@@ -542,7 +542,7 @@ function ResponsiveAppBar() {
                                             color: "white",
                                         }}
                                     >
-                                        Watch Video
+                                        Enquire Now
                                     </StyledButton>
                                 </ScrollLink>
                             </Box>

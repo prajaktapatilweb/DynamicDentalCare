@@ -30,7 +30,6 @@ export default function Home() {
 
       {/* <SlideBasicThree data={heroPhotoList}></SlideBasicThree> */}
       <LabTabs></LabTabs>
-     <Container>hello everybody</Container> 
       {/* <Clinicinfo /> */}
       <Dentalservices></Dentalservices>
       {/* <Hero></Hero> */}

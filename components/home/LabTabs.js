@@ -7,6 +7,7 @@ import TabPanel from '@mui/lab/TabPanel';
 import Countdown from './Countdown';
 import Clinicinfo from './Clinicinfo';
 import { Container } from '@mui/material';
+import Clinicinfo1 from './Clinicinfo1';
 
 export default function LabTabs() {
   const [value, setValue] = React.useState('1');
@@ -30,7 +31,7 @@ export default function LabTabs() {
           </TabList>
         </Box>
         <TabPanel value="1"> <Clinicinfo/>  </TabPanel>
-        <TabPanel value="2">Item Two</TabPanel>
+        <TabPanel value="2"><Clinicinfo1/> </TabPanel>
       </TabContext>
     </Box>
     </Container>

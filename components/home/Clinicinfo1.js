@@ -20,6 +20,7 @@ import FileDownloadDoneIcon from '@mui/icons-material/FileDownloadDone';
 import Countdown from "./Countdown";
 import typography from "../../config/theme/typography";
 import Drgallery from "./Drgallery";
+import Drgallery1 from "./Drgallery1";
 
 
 const explist = [
@@ -31,7 +32,7 @@ const explist = [
     'Skilled dental surgeon providing advanced dental treatments to address diverse oral health needs.',
 
 ];
-const Clinicinfo = () => {
+const Clinicinfo1 = () => {
     const text = "Dynamic Dental Care - Best dentist in Thane";
     const letters = Array.from(text);
     // const words = text.split(" ");
@@ -102,7 +103,7 @@ const Clinicinfo = () => {
 
                         <Grid container spacing={3} >
                             <Grid item xs={12} md={6}>
-                                <Drgallery/>
+                                <Drgallery1/>
                                 {/* <Image
                                     src="/images/clinic1.jpg"
                                     height={100}
@@ -114,7 +115,7 @@ const Clinicinfo = () => {
                                 {/* <img src="/images/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" class="img-fluid" alt="" /> */}
                             </Grid>
                             <Grid item xs={12} md={6} textAlign='justify'>
-                                <Typography variant="h1" > Best Dentist in Thane</Typography>
+                                <Typography variant="h1" > Best Dentist in Airoli</Typography>
                                 <p class="fst-italic" style={{marginTop:4,marginBottom:0}}>
                                     Welcome to Dynamic Dental Care and Implant Centre, your trusted destination for top-quality dental care in Airoli, Navi Mumbai, and Thane West. Founded by Dr. Anuj Mishra, a renowned Dental Surgeon and Implantologist, and co-founded by Dr. Shweta Mishra, our clinic is committed to delivering excellence in dental services.
                                 </p>
@@ -130,9 +131,8 @@ const Clinicinfo = () => {
                                 </List>
 
                                 <p>
-                                    {/* Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum */}
+                                Experience the difference at Dynamic Dental Care and Implant Centre, where your smile is our priority. Schedule your appointment today for comprehensive and personalized dental care.
+
                                 </p>
                             </Grid>
                         </Grid>
@@ -142,4 +142,4 @@ const Clinicinfo = () => {
         </>
     );
 };
-export default Clinicinfo;
+export default Clinicinfo1;

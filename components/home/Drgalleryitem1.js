@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Box from '@mui/material/Box';
 import { iconButtonClasses } from '@mui/material/IconButton';
-const Drgalleryitem = ({ item }) => {
+const Drgalleryitem1 = ({ item }) => {
     return (
         <Box sx={{
             px: 1,
@@ -27,7 +27,7 @@ const Drgalleryitem = ({ item }) => {
 
                     <Image
                         alt={'Clinic' + item.id}
-                        src={`/images/Thane/t/clinic${item}.jpg`}
+                        src={`/images/Airoli/a/clinic${item}.jpg`}
                         width={100}
                         height={100}
                         layout='responsive'></Image>
@@ -37,4 +37,4 @@ const Drgalleryitem = ({ item }) => {
             </Box>
         </Box>);
 };
-export default Drgalleryitem;
+export default Drgalleryitem1;

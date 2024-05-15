@@ -11,7 +11,7 @@ import Whatsappnew from "./Whatsappnew";
 import CallIcon from '@mui/icons-material/Call';
 import { UpgradeRounded, WhatsApp } from "@mui/icons-material";
 const Footer = () => {
-  const contactno1 = "+917900074487";
+  const contactno1 = "+919833389890";
 
   return (
     <Box
@@ -181,7 +181,7 @@ const Footer = () => {
                 style={{ textDecoration: "underline", display: "inline-block" }}
               >
 
-                <Image src="/images/telephone.png" width={75} height={75} style={{ paddingInline: 5, paddingTop: 5 }} alt="phone" />
+                <Image src="/images/telephone.png" width={40} height={40} style={{ paddingInline: 5, paddingTop: 5 }} alt="phone" />
               </Link>
             </div>
             <div style={{ position: 'fixed', left: '40px', bottom: '40px', zIndex: 996 }}>
@@ -191,7 +191,7 @@ const Footer = () => {
                 className="footermenu"
                 style={{ textDecoration: "underline", display: "inline-block" }}
               >
-                <Image src="/images/whatsapp.webp" width={75} height={80} />
+                <Image src="/images/whatsapp.webp" width={50} height={50} />
               </Link>
             </div>
           </Box>

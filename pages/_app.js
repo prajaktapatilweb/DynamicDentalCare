@@ -82,7 +82,7 @@ export default function MyApp(props) {
                                 case 'dental-implants-in-chembur':
                                     return <>
                                         <title>
-                                            Dental Implant Clinic in Chembur | Implantologist in Chembur
+                                        Dynamic Dental Care Airoli | Thane
                                         </title>
                                         <meta name="title" content="Dental Implant Clinic in Chembur | Implantologist in Chembur"></meta>
                                         <meta name='description' content="Welcome to our dental implant clinic in Chembur, where your journey to a confident and radiant smile begins. Our team of experienced implantologists in Chembur is dedicated to providing top-notch dental implant services right here."></meta>

@@ -26,7 +26,7 @@ const Footer = () => {
         <Grid container spacing={2} alignItems='center' justifyContent='center'>
           <Grid item xs={12} md={3}>
             <Box sx={{ mb: { xs: 3, md: 0 } }}>
-            <Image src="/images/logo/logo1.jpg" width={100} height={100} objectFit="contain"></Image>
+            <Image src="/images/logo11.jpeg" width={100} height={100} objectFit="contain"></Image>
 
             
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
@@ -40,7 +40,7 @@ const Footer = () => {
                 }}
               >
                 <Image
-                  src="/images/phone.png"
+                  src="/images/tele.png"
                   width={20}
                   height={20}
                   sx={{
@@ -73,12 +73,12 @@ const Footer = () => {
                   }}
                 ></Image> &nbsp;&nbsp;
                 <Link
-                  href={`mailto:${'dentavenuemumbai@gmail.com'}`}
+                  href={`mailto:${'Dynamicdentalcare2013@gmail.com'}`}
                   target="_blank"
                   className="footermenu"
                   style={{ textDecoration: "underline", display: "inline-block" }}
                 >
-                  dentavenuemumbai@gmail.com
+                  Dynamicdentalcare2013@gmail.com
                 </Link>
 
               </Box>
@@ -117,9 +117,12 @@ const Footer = () => {
             <Typography variant="h4" sx={{ fontWeight: "400" }} gutterBottom>
               Working Hours
             </Typography>
-            <Typography variant="h5" sx={{ mb: 1, fontWeight: '300' }}>
-              Mon-Sat : 10am – 9pm<br></br>
-              Sun : 10am – 4pm
+            <Typography variant="h6" sx={{ mb: 1, fontWeight: '300' }}>
+            Monday to Sunday:<br/>
+10:00 AM – 02:00 PM<br/>
+05:00 PM – 10:00 PM
+
+             
             </Typography>
 
             {/* <FooterNavigation /> */}
@@ -144,22 +147,22 @@ const Footer = () => {
             <Typography variant="h4" sx={{ fontWeight: "400" }} gutterBottom>
               Get In Touch
             </Typography>
-            <a href="https://www.google.com/maps/place/Dr.+Akshay%E2%80%99s+DentAvenue/@19.0607957,72.8997529,15z/data=!4m5!3m4!1s0x0:0xd4992176e1672533!8m2!3d19.0607957!4d72.8997529" target="blank" style={{ color: 'white' }}>
-              DentAvenue, 302, Third Floor, Abhishek Complex, Opposite to BMC M
-              WEST WARD OFFICE, 1st Road, Chembur, Mumbai-400071
-            </a>
-
-
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15084.267627628198!2d72.8997529!3d19.0607957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c602cf4db0f7%3A0xd4992176e1672533!2sDr.%20Akshay&#39;s%20DentAvenue%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1689430175809!5m2!1sen!2sin"
-              width="100%"
-              height="200px"
+          
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15076.329523138258!2d72.9939084!3d19.1478709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf5357d89b7f%3A0xed6d36e32f7534ab!2sDynamic%20Dental%20Care!5e0!3m2!1sen!2sin!4v1715864098424!5m2!1sen!2sin"  width="100%"
+              height="150px"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              style={{ marginBottom: 3, marginTop: 3 }}
-            ></iframe>
+              style={{ marginBottom: 3, marginTop: 3 }}></iframe>
 
-            <FooterSocialLinks />
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15071.132131692939!2d72.9851153!3d19.2046766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b936d2fde0c1%3A0xf5ef3c3e031df47f!2sDynamic%20Dental%20Care%20-%20Best%20dentist%20in%20thane!5e0!3m2!1sen!2sin!4v1715864246797!5m2!1sen!2sin"   width="100%"
+              height="150px"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              style={{ marginBottom: 3, marginTop: 3 }}></iframe>
+
+          
+
+            {/* <FooterSocialLinks /> */}
 
           </Grid>
 

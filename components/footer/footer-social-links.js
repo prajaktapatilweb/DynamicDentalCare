@@ -6,34 +6,22 @@ import Image from 'next/image';
 export const socialLinks = [
     {
         name: 'Instagram',
-        link: 'https://www.instagram.com/drakshaysdentavenue/',
+        link: 'https://www.instagram.com/dranuj6344/',
         icon: '/images/icons/instagram.svg',
     },
-    {
-        name: 'YouTube',
-        link: 'https://www.youtube.com/channel/UCzTOsuUtM6GgJ6oUFEy5NvQ',
-        icon: '/images/icons/youtube.svg',
-    },
-    {
-        name: 'Twitter',
-        link: 'https://twitter.com/DentavenueM',
-        icon: '/images/icons/twitter.svg',
-    },
+   
+   
     {
         name: 'Facebook',
-        link: 'https://www.facebook.com/profile.php?id=100082969286996',
+        link: 'https://www.facebook.com/dranujdynamicdentalcare/',
         icon: '/images/icons/facebbok3.png'
     },
     {
-        name: 'Linkedin',
-        link: 'https://www.linkedin.com/in/dr-akshay-s-dentavenue-282741255/',
-        icon: '/images/icons/linkedin.png',
+        name: 'Facebook',
+        link: 'https://www.facebook.com/dranujdynamicdentalcare/',
+        icon: '/images/icons/facebbok3.png'
     },
-    {
-        name: 'Googlemap',
-        link: 'https://goo.gl/maps/o1D6AEhtxDt19QLu5',
-        icon: '/images/icons/location.png',
-    },
+    
 
 
 

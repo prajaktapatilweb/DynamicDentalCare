@@ -1,5 +1,6 @@
 import moment from "moment/moment";
 const axios = require('axios')
+require("dotenv").config();
 // let nodemailer = require('nodemailer')
 // console.log('first', process.env.EMAILID, process.env.WIN_PASS, process.env.LINUX_PASS, process.env.API_TEST)
 
@@ -40,7 +41,7 @@ export default async function handler(req, res) {
                 <p> <strong> Date & Time :</strong>${date} </p>
                 <p> <strong> IP Address: </strong>${clientIp} </p>`
                 console.log('first', emailContent, process.env.EMAIL_URL)
-                await axios.post("https://node-email-setup.vercel.app/sendemail", { email: 'amolbhushan@gmail.com', sub: emailSubject, msg: emailContent }
+                await axios.post("process.env.EMAIL_URL", { email: 'amolbhushan@gmail.com', sub: emailSubject, msg: emailContent }
                     // client.sendMail(
                     //     {
                     //         from: `Web Developer <${process.env.EMAILID}>`,

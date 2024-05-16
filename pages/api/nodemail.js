@@ -41,7 +41,7 @@ export default async function handler(req, res) {
                 <p> <strong> Date & Time :</strong>${date} </p>
                 <p> <strong> IP Address: </strong>${clientIp} </p>`
                 console.log('first', emailContent, process.env.EMAIL_URL)
-                await axios.post(process.env.EMAIL_URL, { email: 'amolbhushan@gmail.com', sub: emailSubject, msg: emailContent }
+                // await axios.post(process.env.EMAIL_URL, { email: 'amolbhushan@gmail.com', sub: emailSubject, msg: emailContent }
                     // client.sendMail(
                     //     {
                     //         from: `Web Developer <${process.env.EMAILID}>`,
@@ -49,14 +49,14 @@ export default async function handler(req, res) {
                     //         subject: emailSubject,
                     //         text: emailContent
                     //     }
-                ).then(() => {
-                    console.log('Nodr Email sent')
-                    res.status(201).json({ success: true, data: "Email Sent" })
-                })
-                    .catch((error) => {
-                        console.error(error)
-                        res.status(400).json({ success: false });
-                    })
+                // ).then(() => {
+                //     console.log('Nodr Email sent')
+                //     res.status(201).json({ success: true, data: "Email Sent" })
+                // })
+                //     .catch((error) => {
+                //         console.error(error)
+                //         res.status(400).json({ success: false });
+                //     })
             } catch (error) {
                 res.status(400).json({ success: false });
             }

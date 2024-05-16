@@ -142,15 +142,15 @@ function ResponsiveAppBar() {
                                     {" "}
                                     <CallTwoToneIcon />
                                 </IconButton>
-                                <Link href="" target="_blank">
+                                <Link href="9833389890" target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white' }}>
-                                        09702955057
+                                    +919833389890
                                     </a>
                                 </Link>{" "}
                                 /
-                                <Link href="09702955057" target="_blank">
+                                <Link href="9702955057" target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white' }}>
-                                        09702955057
+                                        +919702955057
                                     </a>
                                 </Link>
                                 <IconButton aria-label="email" style={{ color: 'white' }}>
@@ -158,7 +158,7 @@ function ResponsiveAppBar() {
                                 </IconButton>
                                 <Link href="sd" target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white' }}>
-                                        abc@gmail.com
+                                    Dynamicdentalcare2013@gmail.com
                                     </a>
                                 </Link>
                             </Box>
@@ -180,7 +180,7 @@ function ResponsiveAppBar() {
                             <IconButton aria-label="facebook">
                                 {" "}
                                 <a
-                                    href="https://www.facebook.com/AgileWatersConsulting/"
+                                    href="https://www.facebook.com/dranujdynamicdentalcare/"
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="facebook"
@@ -188,19 +188,10 @@ function ResponsiveAppBar() {
                                     <FacebookIcon sx={{ color: "white" }} />{" "}
                                 </a>
                             </IconButton>
-                            <IconButton aria-label="twitter">
-                                <a
-                                    href="https://twitter.com/AgilewatersCo"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="twitter"
-                                >
-                                    <TwitterIcon sx={{ color: "white" }}></TwitterIcon>
-                                </a>
-                            </IconButton>
+                           
                             <IconButton aria-label="instagram">
                                 <a
-                                    href="https://www.instagram.com/agilewatersconsulting/"
+                                    href="https://www.instagram.com/dranuj6344/"
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="instagram"
@@ -212,19 +203,18 @@ function ResponsiveAppBar() {
                             </IconButton>
                             <IconButton aria-label="linkedin">
                                 <a
-                                    href="https://www.linkedin.com/company/agilewaters-consulting/"
+                                    href="https://jsdl.in/DT-43QAIIEQQYA"
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="linkedin"
                                 >
-                                    <LinkedInIcon
-                                        style={{ color: "white", Width: 18, Height: 18 }}
-                                    >
-                                        {" "}
-                                    </LinkedInIcon>
+                                     <Image src="/images/jd.png" width={20} height={20} ></Image>
+
+                                      
+                                      
                                 </a>
                             </IconButton>
-                            <IconButton aria-label="youtube">
+                            {/* <IconButton aria-label="youtube">
                                 <a
                                     href="https://www.youtube.com/channel/UCaHUj0eP9LiEK5zL7QrNbNw"
                                     target="_blank"
@@ -233,7 +223,7 @@ function ResponsiveAppBar() {
                                 >
                                     <YouTubeIcon sx={{ color: "white" }}></YouTubeIcon>
                                 </a>
-                            </IconButton>
+                            </IconButton> */}
                         </Box>
                     </Box>
                 </Container>

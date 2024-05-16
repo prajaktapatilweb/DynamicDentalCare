@@ -41,7 +41,7 @@ export default function Home() {
         <Testimonial></Testimonial>
       </Suspense>
       <Equipment />
-      <Faq />
+      {/* <Faq /> */}
       <Contact></Contact>
 
 

@@ -77,7 +77,6 @@ const Contact = () => {
 
             <div class="section-title">
               <h2>Contact</h2>
-              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
 
           </div>
@@ -88,22 +87,34 @@ const Contact = () => {
 
 
           <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} height='100%' sx={{display:'flex'}}>
 
               <Grid container spacing={2}>
-                <Grid item xs={12} md={12}>
+                <Grid item xs={12} md={6}  sx={{display:'flex',height:{sx:'35%',md:'50%'}}}>
                   <div class="info-box" style={{ background: '#ffffff' }}>
 
                     <i class="bx"><LocationOnIcon /></i>
-                    <h3>Our Address</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <h3 style={{fontSize:'18px'}}>Dynamic Dental Care Airoli</h3>
+                    <p>R.No. B-001, Plot No. A-6/2, Suvarna Dham Bldg, Sector 9, Near HDFC Bank, Airoli, Navi Mumbai - 400 708.</p>
+                  </div>
+                </Grid>
+                <Grid item xs={12} md={6} sx={{display:'flex',display:'flex',height:{sx:'35%',md:'50%'}}}>
+                  <div class="info-box" style={{ background: '#ffffff' }}>
+
+                    <i class="bx"><LocationOnIcon /></i>
+                    <h3 style={{fontSize:'18px'}}>Dynamic Dental Care Thane</h3>
+                    <p>Shop No.1, Ground Floor, New Sahjeevan Society, near Panchganga, 2nd Rabodi, Thane West, Thane 400601.
+</p>
                   </div>
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <div class="info-box mt-4" style={{ background: '#ffffff' }}>
                     <i class="bx"><EmailTwoToneIcon style={{ color: '#49caeb' }}></EmailTwoToneIcon></i>
-                    <h3>Email Us</h3>
-                    <p>info@example.com<br />contact@example.com</p>
+                    <h3>Working Hours</h3>
+                    <p>Monday to Sunday:<br/>
+10:00 AM – 02:00 PM<br/>
+05:00 PM – 10:00 PM
+</p>
                   </div>
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -113,8 +124,8 @@ const Contact = () => {
                       <CallTwoToneIcon style={{ color: '#49caeb' }} />
                     </i>
                     {/* </IconButton> */}
-                    <h3>Call Us</h3>
-                    <p>+1 5589 55488 55<br />+1 6678 254445 41</p>
+                    <h3>Contact Us</h3>
+                    <p>98333 89890<br /> 97029 55057<br/>Dynamicdentalcare2013@gmail.com</p>
                   </div>
                 </Grid>
               </Grid>

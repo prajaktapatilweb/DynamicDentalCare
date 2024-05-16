@@ -18,7 +18,7 @@ export default function LabTabs() {
 
   return (
     <Container>
-<div class="section-title">
+<div class="section-title" id='aboutus'>
               <h2>About Dynamic Dental Care</h2>
             </div>
 

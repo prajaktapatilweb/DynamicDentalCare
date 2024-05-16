@@ -33,47 +33,9 @@ const pages = [
     { linkID: "/#home", label: "Home" },
     { linkID: "/#aboutus", label: "About Us" },
     { linkID: "/#treatments", label: "Treatments" },
-    {
-        label: "Services",
-        submenu: [
-            {
-                linkID: "/services/dental-implants-in-chembur",
-                label: "Dental Implants",
-            },
-            { linkID: "/services/root-canals-in-chembur", label: "Root Canals" },
-            {
-                linkID: "/services/tooth-extraction-in-chembur",
-                label: "Tooth Extraction",
-            },
-            { linkID: "/services/teeth-braces-in-chembur ", label: "Teeth Braces " },
-            {
-                linkID: "/services/kids-dentist-in-chembur",
-                label: "Kids Dental Care",
-            },
-            {
-                linkID: "/services/smile-designing-in-chembur",
-                label: "Smile Designing",
-            },
-            {
-                linkID: "/services/teeth-whitening-in-chembur",
-                label: "Teeth Whitening",
-            },
-            {
-                linkID: "/services/dental-fillings-in-chembur",
-                label: "Dental Fillings",
-            },
-            {
-                linkID: "/services/crown-and-bridges-treatment-in-chembur",
-                label: "Crown And Bridges ",
-            },
-        ],
-    },
     { linkID: "/#testimonials", label: "Testimonials" },
     { linkID: "/#gallery", label: "Gallery" },
-    { linkID: "/#faq", label: "FAQ" },
-    { linkID: "/trainer", label: "Training" },
     { linkID: "/#contactform", label: "Contact" },
-    { linkID: "/blog", label: "Blog" },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -100,6 +62,11 @@ function ResponsiveAppBar() {
         // handleCloseNavMenu()
         setFlag(!flag);
     };
+
+  const contactno1 = "+919833389890  ";
+  const contactno2 = "+919702955057";
+
+
 
     return (
         <AppBar
@@ -142,13 +109,13 @@ function ResponsiveAppBar() {
                                     {" "}
                                     <CallTwoToneIcon />
                                 </IconButton>
-                                <Link href="9833389890" target="_blank">
+                                <Link  href={`tel:${contactno1}`} target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white' }}>
                                     +919833389890
                                     </a>
                                 </Link>{" "}
                                 /
-                                <Link href="9702955057" target="_blank">
+                                <Link href={`tel:${contactno2}`} target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white' }}>
                                         +919702955057
                                     </a>
@@ -156,7 +123,8 @@ function ResponsiveAppBar() {
                                 <IconButton aria-label="email" style={{ color: 'white' }}>
                                     <EmailTwoToneIcon />{" "}
                                 </IconButton>
-                                <Link href="sd" target="_blank">
+                                <Link 
+                               href={`mailto:${'Dynamicdentalcare2013@gmail.com'}`} target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white' }}>
                                     Dynamicdentalcare2013@gmail.com
                                     </a>
@@ -301,42 +269,17 @@ function ResponsiveAppBar() {
                                                 }
                                             >
                                                 <Grid container direction="row" alignItems="center">
-                                                    {page.label} {page.submenu && <KeyboardArrowRight />}
+                                                    {page.label} 
                                                 </Grid>
                                             </MenuItem>
                                         </Link>
-                                        {page.submenu &&
-                                            flag &&
-                                            page.submenu.map((item) => {
-                                                return (
-                                                    <Card sx={{ background: "#F0F0F0" }}>
-                                                        <Link
-                                                            key={i}
-                                                            href={item.linkID}
-                                                            sx={{
-                                                                // p: 1,
-                                                                fontWeight: 800,
-                                                                letterSpacing: ".1rem",
-                                                                color: "black",
-                                                                textDecoration: "none",
-                                                                textAlign: "center",
-                                                            }}
-                                                        >
-                                                            <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                                                <Typography sx={{ pl: 5 }}>
-                                                                    {item.label}
-                                                                </Typography>
-                                                            </MenuItem>
-                                                        </Link>
-                                                    </Card>
-                                                );
-                                            })}
+                                       
                                     </>
                                 );
                             })}
                         </Menu>
                     </Box>
-                    <Image src="/images/logo/logo1.jpg" width={150} height={100} objectFit="contain"></Image>
+                    <Image src="/images/logo/logo1.jpg" width={80} height={80} objectFit="contain"></Image>
 
                     {/* dekstop menu */}
                     <Box
@@ -347,38 +290,10 @@ function ResponsiveAppBar() {
                     >
                         {pages.map((page, i) => {
                             if (page.submenu) {
-                                // return <AccountMenu list={page.submenu} />
-                                {
-                                    /* For Sub Menu  */
-                                }
+                                
                                 return (
                                     <Box sx={{ flexGrow: 0 }}>
-                                        <MenuItem
-                                            onClick={handleOpenUserMenu}
-                                        // aria-controls={open ? 'account-menu' : undefined}
-                                        // aria-haspopup="true"
-                                        // aria-expanded={open ? 'true' : undefined}
-                                        >
-                                            <Typography
-                                                sx={{
-                                                    // mx: 2,
-                                                    display: {
-                                                        xs: "none",
-                                                        sm: "none",
-                                                        md: "none",
-                                                        lg: "flex",
-                                                    },
-                                                    fontWeight: 700,
-                                                    letterSpacing: ".1rem",
-                                                    // color: 'White',
-                                                    textDecoration: "none",
-                                                }}
-                                                variant="h5"
-                                            >
-                                                Services <KeyboardArrowDown />
-                                            </Typography>
-                                        </MenuItem>
-
+                                        
                                         <Menu
                                             sx={{ mt: "45px" }}
                                             id="menu-appbar"

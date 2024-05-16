@@ -38,10 +38,8 @@ const DrAkshay = () => {
       <Container>
         <div class="section-title">
           <h2>Doctors</h2>
-          <p>
-            Magnam dolores commodi suscipit. Et nemo qui impedit suscipit alias
-            ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
+          <p>The Importance of Preventive Medicine: Insights from Doctors</p>
+         
         </div>
         <Grid
           container
@@ -206,7 +204,7 @@ const DrAkshay = () => {
 
         <br></br>
         <br></br>
-        <Grid
+        {/* <Grid
           container
           spacing={7}
           alignItems="center"
@@ -221,7 +219,7 @@ const DrAkshay = () => {
                   "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px",
               }}
             >
-              {/* <div class="flip-card"> */}
+              {/* <div class="flip-card"> *
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   {/* <CardMedia
@@ -229,13 +227,13 @@ const DrAkshay = () => {
                     height="100%"
                     image="/images/dr/dr013.jpg"
                     alt="green iguana"
-                  /> */}
+                  /> *
                   <img
                     src="/images/dr/dr013.jpg"
                     alt="Avatar"
                     style={{ width: "100%", height: "400px" }}
                   />
-                  {/* <CardContent> */}
+                  {/* <CardContent> *
                   <Typography gutterBottom variant="h5" component="div">
                     <h4
                       style={{
@@ -253,7 +251,7 @@ const DrAkshay = () => {
                     Experience: 10+ Years
                   </Typography>
 
-                  {/* </CardContent> */}
+                  {/* </CardContent> *
                 </div>
                 <div class="flip-card-back" style={{ padding: 15 }}>
                   <h4
@@ -275,7 +273,7 @@ const DrAkshay = () => {
                   </h4>
                 </div>
               </div>
-              {/* </div> */}
+              {/* </div> *
             </Card>
             {/* <Card sx={{ background: '#f0fafa', boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px' }}>
               {/* <CardActionArea> *
@@ -298,7 +296,7 @@ const DrAkshay = () => {
 
               </CardContent>
               {/* </CardActionArea> *
-            </Card> */}
+            </Card> *
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Card
@@ -308,7 +306,7 @@ const DrAkshay = () => {
                   "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px",
               }}
             >
-              {/* <div class="flip-card"> */}
+              {/* <div class="flip-card"> *
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   {/* <CardMedia
@@ -316,13 +314,13 @@ const DrAkshay = () => {
                     height="100%"
                     image="/images/dr/dr013.jpg"
                     alt="green iguana"
-                  /> */}
+                  /> *
                   <img
                     src="/images/dr/dr02.jpg"
                     alt="Avatar"
                     style={{ width: "100%", height: "400px" }}
                   />
-                  {/* <CardContent> */}
+                  {/* <CardContent> *
                   <Typography gutterBottom variant="h5" component="div">
                     <h4
                       style={{
@@ -340,7 +338,7 @@ const DrAkshay = () => {
                     Experience: 8+ Years
                   </Typography>
 
-                  {/* </CardContent> */}
+                  {/* </CardContent> *
                 </div>
                 <div class="flip-card-back" style={{ padding: 15 }}>
                   <h4
@@ -355,7 +353,7 @@ const DrAkshay = () => {
                   </h4>
                 </div>
               </div>
-              {/* </div> */}
+              {/* </div> *
             </Card>
 
             {/*           
@@ -368,9 +366,9 @@ const DrAkshay = () => {
                   {item}
                 </ListItem>
               ))}
-            </List> */}
+            </List> *
           </Grid>
-        </Grid>
+        </Grid> */}
       </Container>
     </Box>
   );

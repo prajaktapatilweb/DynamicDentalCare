@@ -26,14 +26,11 @@ const Footer = () => {
         <Grid container spacing={2} alignItems='center' justifyContent='center'>
           <Grid item xs={12} md={3}>
             <Box sx={{ mb: { xs: 3, md: 0 } }}>
-              {/* <img src="/images/logo1.jpg" width="200px" ></img> */}
-              <Image src="/images/logo1.jpg" width={180} height={100}></Image>
-              <br></br>
-              {/* <Typography component="h2" variant="h2" sx={{ mb: 2 }}>
-              Dr Akshay's
-            </Typography> */}
+            <Image src="/images/logo/logo1.jpg" width={100} height={100} objectFit="contain"></Image>
+
+            
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
-                Discover top-notch dental care at the Dr. Akshay's DentAvenue Dental Clinic, conveniently located near you in Chembur. Led by Dr. Akshay, your trusted dentist in Chembur, our dedicated team is committed to providing tailored treatments, ensuring you attain a long-lasting, radiant smile. Whether you're seeking a dental clinic near me or a dental clinic in Chembur, we've got you covered.
+              Discover exceptional dental care at Dynamic Dental Care and Implant Centre, conveniently located in Airoli, Navi Mumbai, and Thane West. Led by Dr. Anuj Mishra, our dedicated team is committed to providing personalized treatments for a long-lasting, healthy smile. Whether you're in Airoli, Navi Mumbai, or Thane West, we're here for you.
               </Typography>
               <Box
                 sx={{
@@ -116,13 +113,7 @@ const Footer = () => {
                 Gallery
               </Link>
             </Typography>
-            <Typography variant="h5" sx={{ mb: 1 }}>
-              {" "}
-              <Link href="/#faq" className="footermenu">
-                FAQs
-              </Link>
-            </Typography>
-
+          
             <Typography variant="h4" sx={{ fontWeight: "400" }} gutterBottom>
               Working Hours
             </Typography>

@@ -222,7 +222,7 @@ const Contact = () => {
                               }}
                               variant='outlined'
                               multiline
-                              rows='2'
+                              rows='4'
                             />
                           </Box>
                         </Grid>

@@ -43,37 +43,32 @@ const DrAkshay = () => {
         </div>
         <Grid
           container
-          spacing={2}
+          spacing={0}
           alignItems="center"
           justifyContent="center"
           textAlign="center"
           sx={{ pt: 5 }}
         >
-          <Grid item xs={12} sm={12} md={12}>
 
-            <Grid
-              container
-              spacing={2}
-              alignItems="center"
-              justifyContent="center"
-              textAlign="center"
-            >
+            
               <Grid item xs={12} sm={4}>
+                <Box sx={{p:3}}>
                 <Image
-                  src="/images/dr/dr013.jpg"
+                  src="/images/dr/drs4.jpg"
                   alt="Avatar"
                   width={300}
                   height={300}
                   // layout="responsive"
                   style={{
                     width: '100%', height: '100%',
-                    borderRadius: '50%', boxShadow:
+                     boxShadow:
                       "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px",
                   }}
                 />
+                </Box>
               </Grid>
               <Grid item xs={12} sm={8}>
-                <Box sx={{ px: 2 }}>
+                <Box sx={{ px: 1 }}>
                   <h4
                     style={{
                       fontWeight: 700,
@@ -123,22 +118,12 @@ const DrAkshay = () => {
                   </Typography>
                 </Box>
               </Grid>
-            </Grid>
             {/* </Card> */}
-          </Grid>
 
-          <Grid item xs={12} sm={12} md={12}>
 
-            <Grid
-              container
-              spacing={2}
-              alignItems="center"
-              justifyContent="center"
-              textAlign="center"
-            >
-
+           
               <Grid item xs={12} sm={8}>
-                <Box sx={{ px: 2 }}>
+                <Box sx={{ px: 1 }}>
                   <h4
                     style={{
                       fontWeight: 700,
@@ -183,24 +168,25 @@ const DrAkshay = () => {
                 </Box>
               </Grid>
               <Grid item xs={12} sm={4}>
+              <Box sx={{p:3}}>
+
                 <Image
-                  src="/images/dr/dr04.jpg"
+                  src="/images/dr/shweta.jpeg"
                   alt="Avatar"
                   width={300}
                   height={300}
                   // layout="responsive"
                   style={{
                     width: '100%', height: '100%',
-                    borderRadius: '50%', boxShadow:
+                     boxShadow:
                       "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px",
                   }}
                 />
+                </Box>
               </Grid>
             </Grid>
             {/* </Card> */}
-          </Grid>
 
-        </Grid>
 
         <br></br>
         <br></br>

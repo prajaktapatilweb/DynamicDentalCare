@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Card } from '@mui/material';
+import { Typography, Card, Link } from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Axios from 'axios';
@@ -12,6 +12,8 @@ import { useRouter } from 'next/router';
 import CallTwoToneIcon from "@mui/icons-material/CallTwoTone";
 import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import IconButton from "@mui/material/IconButton";
+
 
 const All = [
   { key: 1, text: 'Braces/ aligners', value: 'Braces/ aligners' },
@@ -42,6 +44,10 @@ const validationSchema = yup.object({
 });
 
 const Contact = () => {
+
+  const contactno1 = "+919833389890";
+  const contactno2 = "+919702955057";
+
   const router = useRouter()
   const onSubmit = async (values, submitProps) => {
     console.log({ values })
@@ -125,7 +131,24 @@ const Contact = () => {
                     </i>
                     {/* </IconButton> */}
                     <h3>Contact Us</h3>
-                    <p>98333 89890<br /> 97029 55057<br/>Dynamicdentalcare2013@gmail.com</p>
+                    <Link  href={`tel:${contactno1}`} target="_blank">
+                                    <a className="nav-link-inner--text" >
+                                    +919833389890
+                                    </a>
+                                </Link>{" "}
+                                <br/>
+                                <Link href={`tel:${contactno2}`} target="_blank">
+                                    <a className="nav-link-inner--text">
+                                        +919702955057
+                                    </a>
+                                </Link>
+                               <br/>
+                                <Link 
+                               href={`mailto:${'Dynamicdentalcare2013@gmail.com'}`} target="_blank">
+                                    <a className="nav-link-inner--text" >
+                                    Dynamicdentalcare2013@gmail.com
+                                    </a>
+                                </Link>
                   </div>
                 </Grid>
               </Grid>

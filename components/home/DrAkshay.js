@@ -34,7 +34,7 @@ const DrAkshay = () => {
     "Former Assistant Professor",
   ];
   return (
-    <Box sx={{ py: { xs: 7, md: 7 }, backgroundColor: "background.paper" }}>
+    <Box sx={{ py: { xs: 7, md: 5 }, backgroundColor: "background.paper" }}>
       <Container>
         <div class="section-title">
           <h2>Doctors</h2>
@@ -47,14 +47,13 @@ const DrAkshay = () => {
           alignItems="center"
           justifyContent="center"
           textAlign="center"
-          sx={{ pt: 5 }}
         >
 
             
               <Grid item xs={12} sm={4}>
                 <Box sx={{p:3}}>
                 <Image
-                  src="/images/dr/drs4.jpg"
+                  src="/images/dr/drs6.jpg"
                   alt="Avatar"
                   width={300}
                   height={300}

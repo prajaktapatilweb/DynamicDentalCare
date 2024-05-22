@@ -63,7 +63,7 @@ function ResponsiveAppBar() {
         setFlag(!flag);
     };
 
-  const contactno1 = "+919833389890  ";
+  const contactno1 = "+919833389890";
   const contactno2 = "+919702955057";
 
 
@@ -79,11 +79,10 @@ function ResponsiveAppBar() {
                 height: "100%",
                 alignItems: "center",
                 justifyItems: "center",
-                borderRadius: 0
             }}
         >
             <section style={{
-                background: '#121f38', width: '100%', padding: 3, borderRadius: 0
+                background: '#121f38', width: '100%', padding: 0, borderRadius: 0,
             }}>
                 <Container maxWidth="xl">
                     <Box
@@ -99,9 +98,9 @@ function ResponsiveAppBar() {
                             <Box
                                 sx={{
                                     width: "100%",
-                                    maxHeight: 300,
+                                    // maxHeight: 300,
                                     "@media (min-width: 768px)": {
-                                        width: "50%",
+                                        width: "70%",
                                     },
                                 }}
                             >
@@ -141,7 +140,7 @@ function ResponsiveAppBar() {
                                 },
                                 // textAlign: 'right',
                                 "@media (min-width: 768px)": {
-                                    width: "50%",
+                                    width: "30%",
                                 },
                             }}
                         >
@@ -198,14 +197,14 @@ function ResponsiveAppBar() {
             </section>
             <section style={{
                 background: '#121f38', width: '100%', padding: 3, background: '#121f38',
-                background: 'rgba( 0, 0, 0, 0.2 )',
+                background: 'rgba( 0, 0, 0, 0.5 )',
                 boxShadow: ' 0 10px 10px 1px #0000001f',
                 backdropFilter: 'blur( 8px )',
                 textAlign: 'center', justifyContent: 'center', alignItems: 'center',
-                borderBottom: '1px solid #ffffff36',
+                // borderBottom: '1px solid #ffffff36',
                 display: 'flex'
             }}>
-                <Toolbar disableGutters style={{ gap: 20 }} >
+                <Toolbar disableGutters style={{ gap: 50 }} >
 
 
                     <Box
@@ -279,7 +278,7 @@ function ResponsiveAppBar() {
                             })}
                         </Menu>
                     </Box>
-                    <Image src="/images/logo11.jpeg" width={90} height={90} objectFit="contain"></Image>
+                    <Image src="/images/logo11.jpeg" width={60} height={60} objectFit="contain"></Image>
 
                     {/* dekstop menu */}
                     <Box
@@ -405,6 +404,8 @@ function ResponsiveAppBar() {
                                 {" "}
                                 Your Journey to Dental Wellness Starts Here!
                             </Typography>
+                        <Hidden mdDown>
+
                             <Typography
                                 component="span"
                                 sx={{
@@ -424,6 +425,7 @@ function ResponsiveAppBar() {
                             >
                                Step into Dynamic Dental Care and Implant Centre, your premier destination for top-tier dental solutions in Airoli, and Thane West.<br></br> Experience personalized care and cutting-edge techniques for radiant smiles.
                             </Typography>
+                            </Hidden>
 
                             <Box sx={{ "& button": { mt: 4, mb: 7 } }}>
                                 <ScrollLink

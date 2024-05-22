@@ -132,22 +132,16 @@ const Contact = () => {
                     {/* </IconButton> */}
                     <h3>Contact Us</h3>
                     <Link  href={`tel:${contactno1}`} target="_blank">
-                                    <a className="nav-link-inner--text" >
                                     +919833389890
-                                    </a>
                                 </Link>{" "}
                                 <br/>
                                 <Link href={`tel:${contactno2}`} target="_blank">
-                                    <a className="nav-link-inner--text">
                                         +919702955057
-                                    </a>
                                 </Link>
                                <br/>
                                 <Link 
                                href={`mailto:${'Dynamicdentalcare2013@gmail.com'}`} target="_blank">
-                                    <a className="nav-link-inner--text" >
                                     Dynamicdentalcare2013@gmail.com
-                                    </a>
                                 </Link>
                   </div>
                 </Grid>

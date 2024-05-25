@@ -123,7 +123,7 @@ const Clinicinfo = () => {
                                         <ListItem
                                             key={item}
                                         >
-                                            <FileDownloadDoneIcon sx={{ fontSize: 18, marginRight: 1, color: '#49caeb' }} />
+                                            <FileDownloadDoneIcon sx={{ fontSize: 18, marginRight: 1, color: 'primary.main' }} />
                                             {item}
                                         </ListItem>
                                     ))}

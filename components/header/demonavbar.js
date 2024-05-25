@@ -72,7 +72,7 @@ function ResponsiveAppBar() {
         <AppBar
             position="static"
             sx={{
-                backgroundImage: `url("/images/heroimg7.jpg")`,
+                backgroundImage: `url("/images/hero3.png")`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 display: "flex",
@@ -196,8 +196,10 @@ function ResponsiveAppBar() {
                 </Container>
             </section>
             <section style={{
-                background: '#121f38', width: '100%', padding: 3, background: '#121f38',
-                background: 'rgba( 0, 0, 0, 0.5 )',
+                // background: '#121f38',
+                 width: '100%', padding: 3,
+                background: 'rgba( 255, 255, 255, 0.4)',
+                // backgroundColor:'white',
                 boxShadow: ' 0 10px 10px 1px #0000001f',
                 backdropFilter: 'blur( 8px )',
                 textAlign: 'center', justifyContent: 'center', alignItems: 'center',
@@ -278,7 +280,7 @@ function ResponsiveAppBar() {
                             })}
                         </Menu>
                     </Box>
-                    <Image src="/images/logo11.jpeg" width={60} height={60} objectFit="contain"></Image>
+                    <Image src="/images/ddclogo1.png" width={120} height={60} objectFit="contain"></Image>
 
                     {/* dekstop menu */}
                     <Box
@@ -347,9 +349,9 @@ function ResponsiveAppBar() {
                                                 md: "none",
                                                 lg: "flex",
                                             },
-                                            fontWeight: 700,
+                                            fontWeight: 900,
                                             letterSpacing: ".1rem",
-                                            color: 'White',
+                                            color: '#29357a',
                                             textDecoration: "none",
                                             float: "right",
                                         }}
@@ -439,14 +441,14 @@ function ResponsiveAppBar() {
                                         color="white"
                                         size="large"
                                         variant="outlined"
-                                        startIcon={<PlayArrow />}
                                         sx={{
                                             mb: { xs: 3, sm: 0, md: 0 },
                                             fontSize: 17,
-                                            border: "3px solid",
+                                            border: "1px solid",
                                             borderRadius: 1,
-                                            borderColor: "#49caeb",
-                                            color: "white",
+                                            background:'#70cad2',
+                                            borderColor: "#70cad2",
+                                            color: "#2b337d",
                                         }}
                                     >
                                         Enquire Now

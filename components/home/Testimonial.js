@@ -2,7 +2,6 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Slider from "react-slick";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme, styled } from "@mui/material/styles";

@@ -60,7 +60,7 @@ export default function Countdown() {
                                 >
                                     <CountUp end={item.numbers} duration={5} start={200} />+
                                 </Typography>
-                                <Typography color="#49caeb" variant="h5">
+                                <Typography color="primary.main" variant="h5">
                                     {item.title}
                                 </Typography>
                             </Card>

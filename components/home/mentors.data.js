@@ -5,37 +5,56 @@ export const data = [
 
         id: 1,
         photo: '/images/mentors/testi1.jpeg',
-        name: ' Pravin Kothari ',
+        name: 'Shrinand Sagavkar',
         category: '',
-        description: 'Generally, dental problems are very painful, but their treatment at this dental clinic is very good and absolutely painless. They have the latest machines and highly experienced staff. Moreover, they are very humble and polite with all patients, explaining the problem in detail and providing the best solution. I wish them all the best.',
+        description: 'Very excellent treatment. I am totally satisfied and happy because I have prolonged dental and Gums issues so many years I can\'t brush after removing some teeth and route canal and installing dental bridge. My problem is solved. Thanks to Dr. Mishra',
 
     },
     {
 
         id: 2,
-        photo: '/images/mentors/testi4.jpeg',
-        name: 'Roswitha G',
-        category: 'Fullstack Development',
-        description: 'I must say, normally I dread dental visits, but your dental clinic took such exceptional care of me. The cleanliness at your place gives a positive hygiene vibe, along with proper suggestions for tooth care. Thank you for the excellent treatment; your team is marvelous 💖💖💖💖💖 Five hearts to Dr. Saudnya, Dr. Akshay, and Dr. Vivek. 😊',
+        photo: '/images/mentors/testi2.jpeg',
+        name: 'Siddhi Sakpal',
+        category: '',
+        description: 'Used digital cap impression to make the job much easier. It was a good experience😊',
 
     },
     {
 
         id: 3,
         photo: '/images/mentors/testi3.jpeg',
-        name: ' Sanskar Godha',
+        name: 'Ranjeet Mishra',
         category: '',
-        description: 'I was referred to Dr. Akshay by my cousin. Dr. Akshay explained the diagnosis in a calm, detailed, and easy-to-understand manner. I had my wisdom tooth removed and bridges installed. It was the best experience. There was no pain after the wisdom tooth extraction. The doctor did an amazing job. I am extremely satisfied with the experience and will definitely recommend it to others.',
+        description: 'Doctor is very co- operative and supportive.  I had been in her contact since 2019, very nice experience.',
 
     },
 
     {
 
         id: 4,
-        photo: '/images/mentors/testi2.jpeg',
-        name: ' Aarti Maurya',
+        photo: '/images/mentors/testi4.jpeg',
+        name: 'Priyanka Dutta',
         category: ' ',
-        description: <span>Hello, this is Dr. Aarti (I am a dentist myself). I had problems with my front teeth for a long time as they were decayed. I got <Link href='https://www.dentavenue.in/services/dental-fillings-in-chembur' sx={{ color: '#551a8b' }}> fillings </Link> done multiple times, but I was never satisfied with the results. So, I finally decided to go ahead with a permanent solution. I chose to get Laminates (smile designing) done. I had complete trust in Dr. Akshay, and I am amazed at the results. I got my natural smile back. As a dentist, I have high expectations, and I was not disappointed. Thanks to Dr. Akshay for the wonderful job.</span>,
+        description: <span>Doctor Shweta is very professional, very thorough. I went for dental filling, she made sure the entire procedure is painless and as comfortable as can be for me. The filling were absolutely precise. Thank you so much.</span>,
 
     },
+    {
+
+        id: 5,
+        photo: '/images/mentors/testi5.jpeg',
+        name: ' Shailja Shukla',
+        category: ' ',
+        description: <span>I consulted Dr Shweta and Dr Anuj for my mother's root canal, the treatment which my mom received is the best. My mother is very happy, she smiles confidently. Highly recommend! Thank you so much to them.</span>,
+
+    },
+    {
+
+        id: 6,
+        photo: '/images/mentors/testi6.jpeg',
+        name: ' DHRUV CHAWDA ',
+        category: ' ',
+        description: <span>Excellent diagnosis and treatment.. Complete resolution of all the dental problems that I was suffering since 2 years .. Good staff.. Thanks Doctor</span>,
+
+    },
+   
 ];

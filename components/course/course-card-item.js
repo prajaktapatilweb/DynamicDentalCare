@@ -36,7 +36,7 @@ const CourseCardItem = ({ item }) => {
       </Box>
       <Box sx={{ p: 3, }}>
         <Box sx={{ mb: 2 }}>
-          <Typography component="h2" variant="h5" sx={{ color: "#0b1341", overflow: 'hidden', fontSize: '1.5rem', fontWeight: 500 }}>
+          <Typography component="h2" variant="h5" sx={{ color: "primary.dark", overflow: 'hidden', fontSize: '1.5rem', fontWeight: 500 }}>
             {item.title}
           </Typography>
 

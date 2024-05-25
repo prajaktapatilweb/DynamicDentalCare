@@ -68,17 +68,19 @@ const DrAkshay = () => {
               </Grid>
               <Grid item xs={12} sm={8}>
                 <Box sx={{ px: 1 }}>
-                  <h4
-                    style={{
+               
+                  < Typography 
+                  component="h1"
+                    sx={{
                       fontWeight: 700,
                       marginBottom: "5px",
                       fontSize: "30px",
-                      color: "#2c4964",
+                      color:"primary.dark",
                     }}
                   >
-                    {" "}
+                    
                     Dr. Anuj Mishra
-                  </h4>
+                  </Typography>
                   <span
                     style={{
                       fontSize: "18px",
@@ -123,17 +125,18 @@ const DrAkshay = () => {
            
               <Grid item xs={12} sm={8}>
                 <Box sx={{ px: 1 }}>
-                  <h4
-                    style={{
+                < Typography 
+                  component="h1"
+                    sx={{
                       fontWeight: 700,
                       marginBottom: "5px",
                       fontSize: "30px",
-                      color: "#2c4964",
+                      color:"primary.dark",
                     }}
                   >
                     {" "}
                     Dr. Shweta Mishra
-                  </h4>
+                  </Typography>
                   <span
                     style={{
                       fontSize: "18px",

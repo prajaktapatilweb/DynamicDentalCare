@@ -37,8 +37,8 @@ const DrAkshay = () => {
     <Box sx={{ py: { xs: 7, md: 5 }, backgroundColor: "background.paper" }}>
       <Container>
         <div class="section-title">
-          <h2>Doctors</h2>
-          <p>The Importance of Preventive Medicine: Insights from Doctors</p>
+        <h2>Meet Our Team of Expert Dentists</h2>
+<p>Leaders in Dental Excellence</p>
          
         </div>
         <Grid

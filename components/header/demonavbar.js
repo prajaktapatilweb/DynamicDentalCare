@@ -11,23 +11,13 @@ import MenuItem from "@mui/material/MenuItem";
 import { Card, Grid, Hidden, Link } from "@mui/material";
 import Image from "next/image";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import {
-    KeyboardArrowDown,
-    KeyboardArrowLeft,
-    KeyboardArrowRight,
-} from "@mui/icons-material";
 import CallTwoToneIcon from "@mui/icons-material/CallTwoTone";
 import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
 import { Link as ScrollLink } from "react-scroll";
 import { StyledButton } from "../styled-button";
-import { PlayArrow } from "@mui/icons-material";
 import Countdown from "../home/Countdown";
 
-// import Link from 'next/link';
 
 const pages = [
     { linkID: "/#home", label: "Home" },
@@ -108,17 +98,19 @@ function ResponsiveAppBar() {
                                     {" "}
                                     <CallTwoToneIcon />
                                 </IconButton>
-                                <Link  href={`tel:${contactno1}`} target="_blank">
-                                    <a className="nav-link-inner--text" style={{ color: 'white' }}>
-                                    +919833389890
-                                    </a>
-                                </Link>{" "}
-                                /
+                               
                                 <Link href={`tel:${contactno2}`} target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white' }}>
                                         +919702955057
                                     </a>
                                 </Link>
+                                /
+
+                                <Link  href={`tel:${contactno1}`} target="_blank">
+                                    <a className="nav-link-inner--text" style={{ color: 'white' }}>
+                                    +919833389890
+                                    </a>
+                                </Link>{" "}
                                 <IconButton aria-label="email" style={{ color: 'white' }}>
                                     <EmailTwoToneIcon />{" "}
                                 </IconButton>

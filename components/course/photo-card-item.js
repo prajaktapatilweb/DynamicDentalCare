@@ -6,7 +6,7 @@ const PhotoCardItem = ({ item }) => {
   return (
     <Box sx={{
       px: 1,
-      py: 4,
+      py: 1,
     }}>
       <Box sx={{
         p: 1,

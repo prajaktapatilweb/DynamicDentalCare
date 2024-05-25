@@ -12,6 +12,8 @@ import CallIcon from '@mui/icons-material/Call';
 import { UpgradeRounded, WhatsApp } from "@mui/icons-material";
 const Footer = () => {
   const contactno1 = "+919833389890";
+  const contactno2 = "+919702955057";
+
 
   return (
     <Box
@@ -114,7 +116,7 @@ const Footer = () => {
           <Box>
             <div style={{ position: 'fixed', right: '40px', bottom: '40px', zIndex: 996, background: 'black', borderRadius: 5 }}>
               <Link
-                href={`tel:${contactno1}`}
+                href={`tel:${contactno2}`}
                 target="_blank"
                 className="footermenu"
                 style={{ textDecoration: "underline", display: "inline-block" }}
@@ -125,7 +127,7 @@ const Footer = () => {
             </div>
             <div style={{ position: 'fixed', left: '40px', bottom: '40px', zIndex: 996 }}>
               <Link
-                href={`https://wa.me/${contactno1}`}
+                href={`https://wa.me/${contactno2}`}
                 target="_blank"
                 className="footermenu"
                 style={{ textDecoration: "underline", display: "inline-block" }}

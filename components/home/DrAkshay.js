@@ -123,7 +123,7 @@ const DrAkshay = () => {
 
 
            
-              <Grid item xs={12} sm={8}>
+              <Grid item xs={12} sm={8} order={{xs:1,md:0}}>
                 <Box sx={{ px: 1 }}>
                 < Typography 
                   component="h1"
@@ -169,7 +169,7 @@ const DrAkshay = () => {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid item xs={12} sm={4}>
+              <Grid item xs={12} sm={4} order={{xs:0,md:1}}>
               <Box sx={{p:3}}>
 
                 <Image

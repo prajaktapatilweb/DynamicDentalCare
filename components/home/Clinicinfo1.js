@@ -115,7 +115,7 @@ const Clinicinfo1 = () => {
                                 {/* <img src="/images/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" class="img-fluid" alt="" /> */}
                             </Grid>
                             <Grid item xs={12} md={6} textAlign='justify'>
-                                <Typography variant="h1" > Best Dentist in Airoli</Typography>
+                                <Typography variant="h1" sx={{fontSize:{xs:27,md:33},mt:{xs:3,md:0}}}> Best Dentist in Airoli</Typography>
                                 <p class="fst-italic" style={{marginTop:4,marginBottom:0}}>
                                     Welcome to Dynamic Dental Care and Implant Centre, your trusted destination for top-quality dental care in Airoli, Navi Mumbai, and Thane West. Founded by Dr. Anuj Mishra, a renowned Dental Surgeon and Implantologist, and co-founded by Dr. Shweta Mishra, our clinic is committed to delivering excellence in dental services.
                                 </p>

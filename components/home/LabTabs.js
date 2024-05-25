@@ -17,7 +17,7 @@ export default function LabTabs() {
   };
 
   return (
-    <Container>
+    <>
 <div class="section-title" id='aboutus'>
               <h2>About Dynamic Dental Care</h2>
             </div>
@@ -34,7 +34,6 @@ export default function LabTabs() {
         <TabPanel value="2"><Clinicinfo1/> </TabPanel>
       </TabContext>
     </Box>
-    </Container>
-
+</>
   );
 }

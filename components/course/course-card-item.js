@@ -8,7 +8,7 @@ import ArrowForward from '@mui/icons-material/ArrowForward';
 const CourseCardItem = ({ item }) => {
   return (<Box sx={{
     px: 1,
-    py: 4,
+    py: 1,
   }}>
     <Box sx={{
 

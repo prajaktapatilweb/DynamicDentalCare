@@ -45,7 +45,7 @@ export default function Countdown() {
                                 // borderRadius: 3,
                                 border: '1px solid #ffffff36',
                                 p: 5,
-                                mx: { xs: 5, sm: 5, md: 0 }
+                                mx: { xs: 7, sm: 7, md: 0 }
                                 // background: #00000038;
 
                             }}>

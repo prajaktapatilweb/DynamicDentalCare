@@ -354,7 +354,14 @@ function ResponsiveAppBar() {
                                             color: '#29357a',
                                             textDecoration: "none",
                                             float: "right",
+
+                                            '&:hover': {
+                                                color:'white'
+                                            }
+
+                                          
                                         }}
+                                        
                                     >
                                         <MenuItem key={page} onClick={handleCloseNavMenu}>
                                             <Typography

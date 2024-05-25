@@ -9,7 +9,7 @@ export default function Whatsappnew() {
   return (
     <div>
       <FloatingWhatsApp
-        phoneNumber='+917900074487'
+        phoneNumber='+919702955057'
         // phoneNumber={contactdetail.contactno}
         accountName='DentAvenue'
         statusMessage='We will get back to you'

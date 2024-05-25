@@ -91,9 +91,8 @@ const Photogallery = () => {
     >
       <Container maxWidth="lg">
         <div class="section-title">
-          <h2>Smile Gallery: Where Happiness Shines Bright
-</h2>
-          <p>Turning Frowns into Smiles: Our Patients' Transformative Journeys</p>
+          <h2>Smile Gallery</h2>
+          <p>Where Happiness Shines Bright</p>
         </div>
 
 

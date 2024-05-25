@@ -7,7 +7,7 @@ export const data = [
     },
     {
         id: 2,
-        cover: '/images/clinicphotos/patient2.jpg',
+        cover: '/images/clinicphotos/patient21.jpeg',
 
 
     },
@@ -18,7 +18,7 @@ export const data = [
     },
     {
         id: 4,
-        cover: '/images/clinicphotos/patient4.jpg',
+        cover: '/images/clinicphotos/patient41.jpeg',
 
     },
     

@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Slider from "react-slick";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
 import { useTheme, styled } from "@mui/material/styles";
 import { IconButton, useMediaQuery } from "@mui/material";
 import IconArrowBack from "@mui/icons-material/ArrowBack";

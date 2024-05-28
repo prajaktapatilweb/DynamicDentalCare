@@ -4,12 +4,7 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
-
-import { FooterSocialLinks } from "../footer";
 import Link from "next/link";
-import Whatsappnew from "./Whatsappnew";
-import CallIcon from '@mui/icons-material/Call';
-import { UpgradeRounded, WhatsApp } from "@mui/icons-material";
 const Footer = () => {
   const contactno1 = "+919833389890";
   const contactno2 = "+919702955057";

@@ -22,25 +22,10 @@ const HomeHero = () => {
 
   return (
     <>
-      <Box
-        sx={{
-          backgroundImage: `url("/images/heroimg3.webp")`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          display: 'flex',
-          // width: '100%',
-          height: 'auto',
-
-
-          alignItems: 'center',
-          justifyItems: 'center',
-
-          p: { xs: 2, sm: 3, md: 5, lg: 10, xl: 20 },
-        }}
-      >
+      <Box>
         <Container>
           <Grid container alignItems='center' justifyContent='center' textAlign='center'>
-            <Grid item xs={12} md={12}>
+            <Grid item xs={12} md={6}>
               <Box>
                 <Typography variant='p' sx={{ color: 'white', lineHeight: 1.6, fontSize: 18 }} >
 
@@ -96,11 +81,13 @@ const HomeHero = () => {
                   </ScrollLink>
 
                 </Box>
-                <Countdown />
 
 
               </Box>
 
+            </Grid>
+            <Grid item xs={12} md={6}>
+<Image src='/images/main1.jpeg' alt='dentist' width={100} height={100} ></Image>
             </Grid>
           </Grid>
         </Container>

@@ -272,7 +272,7 @@ function ResponsiveAppBar() {
                             })}
                         </Menu>
                     </Box>
-                    <Image src="/images/ddclogo1.png" width={120} height={60} objectFit="contain"></Image>
+                    <Image src="/images/ddclogo1.png" width={150} height={80} objectFit="contain"></Image>
 
                     {/* dekstop menu */}
                     <Box

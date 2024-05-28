@@ -115,24 +115,34 @@ const Contact = () => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <div class="info-box mt-4" style={{ background: '#ffffff' }}>
-                    <i class="bx"><EmailTwoToneIcon style={{ color: '#49caeb' }}></EmailTwoToneIcon></i>
-                    <h3>Working Hours</h3>
-                    <p>Monday to Sunday:<br/>
-10:00 AM – 02:00 PM<br/>
-05:00 PM – 10:00 PM
-</p>
+                    {/* <i class="bx"><EmailTwoToneIcon style={{ color: '#49caeb' }}></EmailTwoToneIcon></i> */}
+                    <h3>Working Hours Airoli</h3>
+                    <p> Monday to Saturday:<br/>
+                   11:00 AM – 03:00 PM<br/>
+06:00 PM – 10:00 PM</p>
+
+<p>Sunday<br/>
+12:00 PM – 03:00 PM(By Appointment Only)</p>
+                 
                   </div>
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <div class="info-box mt-4" style={{ background: '#ffffff' }}>
                     {/* <IconButton aria-label="phone" style={{ color: '#49caeb' }}> */}
-                    <i class="bx">
+                    {/* <i class="bx">
                       <CallTwoToneIcon style={{ color: '#49caeb' }} />
-                    </i>
+                    </i> */}
                     {/* </IconButton> */}
-                    <h3>Contact Us</h3>
+                  
+                    <h3>Working Hours Thane</h3>
+                    <p>Monday to Sunday:<br/>
+10:00 AM – 02:00 PM<br/>
+05:00 PM – 10:00 PM</p>
+                  
+                 
+                    {/* <h3>Contact Us</h3> */}
                     
-                                <br/>
+                                
                                 <Link href={`tel:${contactno2}`} target="_blank">
                                         +919702955057
                                 </Link>

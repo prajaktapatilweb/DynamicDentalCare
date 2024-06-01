@@ -113,7 +113,7 @@ const Contact = () => {
 </p>
                   </div>
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={7}>
                   <div class="info-box mt-4" style={{ background: '#ffffff' }}>
                     {/* <i class="bx"><EmailTwoToneIcon style={{ color: '#49caeb' }}></EmailTwoToneIcon></i> */}
                     <h3>Working Hours Airoli</h3>
@@ -123,10 +123,13 @@ const Contact = () => {
 
 <p>Sunday<br/>
 12:00 PM – 03:00 PM(By Appointment Only)</p>
+<Link  href={`tel:${contactno1}`} target="_blank">
+                                    +919833389890
+                                </Link>{" "}
                  
                   </div>
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={5}>
                   <div class="info-box mt-4" style={{ background: '#ffffff' }}>
                     {/* <IconButton aria-label="phone" style={{ color: '#49caeb' }}> */}
                     {/* <i class="bx">
@@ -147,13 +150,8 @@ const Contact = () => {
                                         +919702955057
                                 </Link>
                                <br/>
-                               <Link  href={`tel:${contactno1}`} target="_blank">
-                                    +919833389890
-                                </Link>{" "}
-                                <Link 
-                               href={`mailto:${'Dynamicdentalcare2013@gmail.com'}`} target="_blank">
-                                    Dynamicdentalcare2013@gmail.com
-                                </Link>
+                             
+                               
                   </div>
                 </Grid>
               </Grid>

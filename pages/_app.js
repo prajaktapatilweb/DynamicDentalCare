@@ -28,7 +28,7 @@ export default function MyApp(props) {
                                 </title>
                                 <meta name="title" content=" Dentist in Thane | Dentist in Airoli - Dynamic Dental Care"></meta>
                                 <meta name='description' content="Looking for a dentist in Thane or Airoli? Visit Dynamic Dental Care for top-quality dental services. Visit our dental clinic in Thane or Airoli today!"></meta>
-                               
+                                {/* <meta name='google-site-verification'  content=""></meta> */}
                                 <link rel="canonical" href="https://www.dynamicdentalcare.in/"/>
                                 <script type="application/ld+json"
                                  dangerouslySetInnerHTML={{

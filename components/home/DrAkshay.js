@@ -6,14 +6,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import StarIcon from "@mui/icons-material/Star";
-import { StyledButton } from "../styled-button";
 import { motion } from "framer-motion";
-import { Card, Link } from "@mui/material";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import { CardActionArea } from "@mui/material";
-import FileDownloadDoneIcon from "@mui/icons-material/FileDownloadDone";
 
 const DrAkshay = () => {
   const variants = {
@@ -34,7 +27,7 @@ const DrAkshay = () => {
     "Former Assistant Professor",
   ];
   return (
-    <Box sx={{ py: { xs: 7, md: 5 }, backgroundColor: "background.paper" }}>
+    <Box sx={{ py: { xs: 7, md: 5 }, backgroundColor: "background.paper" }} id="Doctors">
       <Container>
         <div class="section-title">
         <h2>Meet Our Team of Expert Dentists</h2>

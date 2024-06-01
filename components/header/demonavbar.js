@@ -23,6 +23,7 @@ const pages = [
     { linkID: "/#home", label: "Home" },
     { linkID: "/#aboutus", label: "About Us" },
     { linkID: "/#treatments", label: "Treatments" },
+    { linkID: "/#Doctors", label: "Doctors" },
     { linkID: "/#testimonials", label: "Testimonials" },
     { linkID: "/#gallery", label: "Gallery" },
     { linkID: "/#contactform", label: "Contact" },
@@ -198,7 +199,7 @@ function ResponsiveAppBar() {
                 // borderBottom: '1px solid #ffffff36',
                 display: 'flex'
             }}>
-                <Toolbar disableGutters style={{ gap: 50 }} >
+                <Toolbar disableGutters >
 
 
                     <Box
@@ -272,12 +273,14 @@ function ResponsiveAppBar() {
                             })}
                         </Menu>
                     </Box>
-                    <Image src="/images/ddclogo1.png" width={150} height={80} objectFit="contain"></Image>
+                    <Box sx={{flexGrow:1}}>                    
+                        <Image src="/images/ddclogo1.png" width={150} height={80} objectFit="contain"></Image>
+                        </Box>
 
                     {/* dekstop menu */}
                     <Box
                         sx={{
-                            flexGrow: 1,
+                            flexGrow: 10,
                             display: { xs: "none", md: "flex", textDecoration: "none" },
                         }}
                     >

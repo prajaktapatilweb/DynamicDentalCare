@@ -9,7 +9,7 @@ export default function Thankyou() {
             {/* <HomeHero /> */}
             <Box
                 sx={{
-                    backgroundImage: `url("/images/heroimg3.webp")`,
+                    backgroundImage: `url("/images/hero3.png")`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                     display: 'flex',

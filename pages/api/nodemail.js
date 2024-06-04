@@ -22,7 +22,7 @@ export default async function handler(req, res) {
                 const date = moment().utcOffset("+05:30").format('MMMM Do YYYY, h:mm:ss a')
                 const clientIp = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() ||
                     req.socket.remoteAddress;
-                const emailSubject = 'New Enquiry through Landing Page'
+                const emailSubject = 'New Enquiry through Dynamic Dental Care Website'
                 const emailContent =
                     `Dear Admin, \n \n Details of the person contacted you are as follows \n
                   Name: ${req.body.name} \n

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <LabTabs></LabTabs>
-      testing for form
+      
       <Dentalservices></Dentalservices>
       <DrAkshay></DrAkshay>
       <Suspense fallback=

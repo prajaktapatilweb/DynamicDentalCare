@@ -14,7 +14,7 @@ export default function Thankyou() {
                     backgroundSize: 'cover',
                     display: 'flex',
                     // width: '100%',
-                    height: '83vh',
+                    height: '100vh',
 
                     alignItems: 'center',
                     justifyItems: 'center'

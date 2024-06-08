@@ -6,6 +6,7 @@ import Dentalservices from '../components/home/Dentalservices';
 import DrAkshay from '../components/home/DrAkshay';
 import Contact from '../components/home/Contact';
 import LabTabs from '../components/home/LabTabs';
+import Navbar from "../components/header/navbar";
 const Testimonial = lazy(() => import('../components/home/Testimonial'))
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <LabTabs></LabTabs>
       
       <Dentalservices></Dentalservices>
+
       <DrAkshay></DrAkshay>
       <Suspense fallback=
         {<div>Component are loading please wait...</div>}>

@@ -5,6 +5,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import Link from "next/link";
+import ScrollUp from "../home/ScrollUp";
 const Footer = () => {
   const contactno1 = "+919833389890";
   const contactno2 = "+919702955057";
@@ -19,6 +20,7 @@ const Footer = () => {
         color: "primary.contrastText",
       }}
     >
+   
       <Container sx={{ textAlign: { xs: "center", md: "left" }, maxWidth: { xl: 1300 } }}>
         <Grid container spacing={2} alignItems='center' justifyContent='center'>
           <Grid item xs={12} md={5}>
@@ -108,7 +110,7 @@ const Footer = () => {
           </Grid>
 
           <Box>
-            <div style={{ position: 'fixed', right: '40px', bottom: '40px', zIndex: 996, background: 'black', borderRadius: 5 }}>
+            {/* <div style={{ position: 'fixed', right: '40px', bottom: '40px', zIndex: 996, background: 'black', borderRadius: 5 }}>
               <Link
                 href={`tel:${contactno2}`}
                 target="_blank"
@@ -118,8 +120,8 @@ const Footer = () => {
 
                 <Image src="/images/telephone.png" width={40} height={40} style={{ paddingInline: 5, paddingTop: 5 }} alt="phone" />
               </Link>
-            </div>
-            <div style={{ position: 'fixed', left: '40px', bottom: '40px', zIndex: 996 }}>
+            </div> */}
+            {/* <div style={{ position: 'fixed', left: '40px', bottom: '40px', zIndex: 996 }}>
               <Link
                 href={`https://wa.me/${contactno2}`}
                 target="_blank"
@@ -128,7 +130,7 @@ const Footer = () => {
               >
                 <Image src="/images/whatsapp.webp" width={50} height={50} />
               </Link>
-            </div>
+            </div> */}
           </Box>
 
 

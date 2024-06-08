@@ -6,7 +6,7 @@ import AppThemeSetting from './AppThemeSetting';
 const MainLayout = ({ children }) => {
   return (<Box component="main">
     <Header />
-    {/* <AppThemeSetting/> */}
+    <AppThemeSetting/>
     {children}
     <Footer />
   </Box>);

@@ -87,57 +87,40 @@ const Contact = () => {
 
           </div>
 
-          {/* <div>
-            <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-          </div> */}
-
 
           <Grid container spacing={2}>
-            <Grid item xs={12} md={6} height='100%' sx={{display:'flex'}}>
 
-              <Grid container spacing={2}>
-                <Grid item xs={12} md={6}  sx={{display:'flex',height:{sx:'35%',md:'50%'}}}>
+                <Grid item xs={12} md={3}>
                   <div class="info-box" style={{ background: '#ffffff' }}>
 
                     <i class="bx"><LocationOnIcon /></i>
-                    <h3 style={{fontSize:'18px'}}>Dynamic Dental Care Airoli</h3>
+                    <h3 style={{fontSize:'18px'}}> Airoli</h3>
                     <p>R.No. B-001, Plot No. A-6/2, Suvarna Dham Bldg, Sector 9, Near HDFC Bank, Airoli, Navi Mumbai - 400 708.</p>
-                  </div>
-                </Grid>
-                <Grid item xs={12} md={6} sx={{display:'flex',display:'flex',height:{sx:'35%',md:'50%'}}}>
-                  <div class="info-box" style={{ background: '#ffffff' }}>
-
-                    <i class="bx"><LocationOnIcon /></i>
-                    <h3 style={{fontSize:'18px'}}>Dynamic Dental Care Thane</h3>
-                    <p>Shop No.1, Ground Floor, New Sahjeevan Society, near Panchganga, 2nd Rabodi, Thane West, Thane 400601.
-</p>
-                  </div>
-                </Grid>
-                <Grid item xs={12} md={7}>
-                  <div class="info-box mt-4" style={{ background: '#ffffff' }}>
+                 
+                 
                     {/* <i class="bx"><EmailTwoToneIcon style={{ color: '#49caeb' }}></EmailTwoToneIcon></i> */}
-                    <h3>Working Hours Airoli</h3>
+                    <h3>Working Hours </h3>
                     <p> Monday to Saturday:<br/>
                    11:00 AM – 03:00 PM<br/>
 06:00 PM – 10:00 PM</p>
 
 <p>Sunday<br/>
-12:00 PM – 03:00 PM(By Appointment Only)</p>
+12:00 PM – 03:00 <br/>PM(By Appointment Only)</p>
 <Link  href={`tel:${contactno1}`} target="_blank">
                                     +919833389890
                                 </Link>{" "}
                  
                   </div>
                 </Grid>
-                <Grid item xs={12} md={5}>
-                  <div class="info-box mt-4" style={{ background: '#ffffff' }}>
-                    {/* <IconButton aria-label="phone" style={{ color: '#49caeb' }}> */}
-                    {/* <i class="bx">
-                      <CallTwoToneIcon style={{ color: '#49caeb' }} />
-                    </i> */}
-                    {/* </IconButton> */}
-                  
-                    <h3>Working Hours Thane</h3>
+              
+            <Grid item xs={12} md={3} sx={{display:'flex'}}>
+                  <div class="info-box" style={{ background: '#ffffff' }}>
+
+                    <i class="bx"><LocationOnIcon /></i>
+                    <h3 style={{fontSize:'18px'}}> Thane</h3>
+                    <p>Shop No.1, Ground Floor, New Sahjeevan Society, near Panchganga, 2nd Rabodi, Thane West, Thane 400601.
+</p>
+<h3>Working Hours</h3>
                     <p>Monday to Sunday:<br/>
 10:00 AM – 02:00 PM<br/>
 05:00 PM – 10:00 PM</p>
@@ -150,13 +133,9 @@ const Contact = () => {
                                         +919702955057
                                 </Link>
                                <br/>
-                             
-                               
                   </div>
                 </Grid>
-              </Grid>
-            </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} sx={{display:'flex'}}>
               <Card sx={{ px: 3, py: 4 }}>
                 <Formik
                   validateOnChange={true}
@@ -277,6 +256,7 @@ const Contact = () => {
                 </Formik>
               </Card>
             </Grid>
+          {/* </Grid> */}
           </Grid>
 
         </section>

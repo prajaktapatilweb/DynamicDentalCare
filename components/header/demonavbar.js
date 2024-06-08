@@ -17,6 +17,7 @@ import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
 import { Link as ScrollLink } from "react-scroll";
 import { StyledButton } from "../styled-button";
 import Countdown from "../home/Countdown";
+import Navbar from "./navbar";
 
 
 const pages = [
@@ -68,8 +69,7 @@ function ResponsiveAppBar() {
                 backgroundSize: "cover",
                 display: "flex",
                 height: "100%",
-                alignItems: "center",
-                justifyItems: "center",
+              
             }}
         >
             <section style={{
@@ -188,7 +188,7 @@ function ResponsiveAppBar() {
                     </Box>
                 </Container>
             </section>
-            <section style={{
+            {/* <section style={{
                 // background: '#121f38',
                  width: '100%', padding: 3,
                 background: 'rgba( 255, 255, 255, 0.4)',
@@ -277,7 +277,7 @@ function ResponsiveAppBar() {
                         <Image src="/images/ddclogo1.png" width={150} height={80} objectFit="contain"></Image>
                         </Box>
 
-                    {/* dekstop menu */}
+                    {/* dekstop menu *
                     <Box
                         sx={{
                             flexGrow: 10,
@@ -310,7 +310,7 @@ function ResponsiveAppBar() {
                                             <MenuItem key={setting} onClick={handleCloseUserMenu}>
                                                 <Typography textAlign="center">{setting}</Typography>
                                             </MenuItem>
-                                        ))} */}
+                                        ))} *
                                             {page?.submenu?.map((item, i) => (
                                                 <Link
                                                     key={i}
@@ -373,8 +373,17 @@ function ResponsiveAppBar() {
                     </Box>
 
                 </Toolbar>
-            </section>
-
+            </section> */}
+            <section style={{
+                 padding: 3,
+                background: 'rgba( 255, 255, 255, 0.4)',
+                boxShadow: ' 0 10px 10px 1px #0000001f',
+                backdropFilter: 'blur( 8px )',
+                borderBottom: '1px solid #ffffff36',
+                display: 'flex'
+            }}>
+<Navbar/>
+</section>
             <Box sx={{ my: 10 }}>
                 {/* <Container> */}
                 <Grid

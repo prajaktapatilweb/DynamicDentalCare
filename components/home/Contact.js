@@ -44,7 +44,7 @@ const validationSchema = yup.object({
     // .required('It is required'),
     recaptcha: yup
     .string()
-    .required('It is required'),
+    // .required('It is required'),
 });
 
 const Contact = () => {
@@ -237,7 +237,7 @@ const Contact = () => {
                           </Box>
                         </Grid>
                         <Grid item xs={12} sx={{ mb: { xs: 5, lg: 8 } }}>
-                          <GoogleRecaptcha/>
+                          <GoogleRecaptcha />
                         </Grid>
                       </Grid>
                       {/* <pre>{JSON.stringify(errors, null, 4)}</pre> */}

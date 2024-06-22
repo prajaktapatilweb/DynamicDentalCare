@@ -3,7 +3,7 @@ import { Typography, Card, Link } from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Axios from 'axios';
-import { Field, Form, Formik } from 'formik';
+import { Field, Form, Formik,ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import AppTextField from '../Formik/AppTextField';
 import { Button, FormControl, Grid, InputLabel } from '@mui/material';
@@ -44,7 +44,7 @@ const validationSchema = yup.object({
     // .required('It is required'),
     recaptcha: yup
     .string()
-    // .required('It is required'),
+    .required('It is required'),
 });
 
 const Contact = () => {
@@ -238,6 +238,8 @@ const Contact = () => {
                         </Grid>
                         <Grid item xs={12} sx={{ mb: { xs: 3, lg: 3 } }}>
                           <GoogleRecaptcha />
+                          <ErrorMessage name="recaptcha" component="div" style={{ color: 'red' }} />
+
                         </Grid>
                       </Grid>
                       {/* <pre>{JSON.stringify(errors, null, 4)}</pre> */}

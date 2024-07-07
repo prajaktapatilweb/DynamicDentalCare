@@ -98,16 +98,10 @@ const DrAkshay = () => {
 
                     }}
                   >
-                    Dr. Anuj Mishra brings over a decade of expertise in
-                    transforming smiles and restoring oral health. As a
-                    dedicated dental surgeon and implantologist, he specializes
-                    in a range of advanced treatments, including Full Mouth
-                    Rehabilitation, Smile Designing, Dental Implants, Complete &
-                    Partial Dentures, Laminated & Veneers, Root Canal, Crown &
-                    Bridges, and various other dental procedures. With a
-                    commitment to excellence and a patient-centric approach, Dr.
-                    Anuj ensures each individual receives personalized care and
-                    achieves optimal oral wellness.
+                    Looking for the best dentist in Thane West? Dr. Anuj Mishra might be the perfect fit for you.
+<br/>
+Dr. Anuj Mishra brings over a decade of expertise in transforming smiles and restoring oral health. As a dedicated dental surgeon and implantologist, he specializes in a range of advanced treatments, including full mouth rehabilitation, smile designing, dental implants, root canals, crowns and bridges, and various other dental procedures. With a commitment to excellence, Dr. Anuj ensures each individual receives personalized care and achieves optimal oral wellness.
+
 
                   </Typography>
                 </Box>

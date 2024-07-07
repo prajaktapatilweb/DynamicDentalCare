@@ -114,9 +114,10 @@ const Clinicinfo = () => {
                                 {/* <img src="/images/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" class="img-fluid" alt="" /> */}
                             </Grid>
                             <Grid item xs={12} md={6} textAlign='justify'>
-                                <Typography variant="h1" sx={{fontSize:{xs:27,md:33},mt:{xs:3,md:0}}}> Best Dentist in Thane</Typography>
+                                <Typography variant="h1" sx={{fontSize:{xs:27,md:33},mt:{xs:3,md:0}}}>Best Dentist in Thane West</Typography>
                                 <p class="fst-italic" style={{marginTop:4,marginBottom:0}}>
-                                    Welcome to Dynamic Dental Care and Implant Centre, your trusted destination for top-quality dental care in Airoli, Navi Mumbai, and Thane West. Founded by Dr. Anuj Mishra, a renowned Dental Surgeon and Implantologist, and co-founded by Dr. Shweta Mishra, our clinic is committed to delivering excellence in dental services.
+                                Welcome to Dynamic Dental Care and Implant Centre, your trusted destination for top-quality dental care. Founded by Dr. Anuj Mishra, a renowned Dental Surgeon and Implantologist, and co-founded by Dr. Shweta Mishra. We offer services for adults seeking the best dentist in Thane and specialize in pediatric dentistry to ensure a positive dental experience for your children. 
+
                                 </p>
                                 <List>
                                     {explist.map((item, i) => (
@@ -130,7 +131,8 @@ const Clinicinfo = () => {
                                 </List>
 
                                 <p>
-                                Experience the difference at Dynamic Dental Care and Implant Centre, where your smile is our priority. Schedule your appointment today for comprehensive and personalized dental care.
+                                Experience the difference at Dynamic Dental Care, a trusted dental clinic in Thane West and the premier choice for dental clinic near me. Your smile is our priority. Schedule your appointment today for comprehensive and personalized dental care.
+
 
                                 </p>
                             </Grid>

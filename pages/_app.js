@@ -24,10 +24,10 @@ export default function MyApp(props) {
                 <meta name="viewport" content="initial-scale=1, width=device-width" />
                
                                 <title>
-                                Dentist in Thane | Dentist in Airoli - Dynamic Dental Care
+                                Dentist in Airoli, Dental Clinic in Thane - Dynamic Dental Care
                                 </title>
                                 <meta name="title" content=" Dentist in Thane | Dentist in Airoli - Dynamic Dental Care"></meta>
-                                <meta name='description' content="Looking for a dentist in Thane or Airoli? Visit Dynamic Dental Care for top-quality dental services. Visit our dental clinic in Thane or Airoli today!"></meta>
+                                <meta name='description' content="Looking for a dental clinic near me? Visit Dynamic Dental Care, the best dental clinic in Airoli & Thane, for exceptional dental care. 10+ Years of experience."></meta>
                                 {/* <meta name='google-site-verification'  content=""></meta> */}
                                 <link rel="canonical" href="https://www.dynamicdentalcare.in/"/>
                                 <script type="application/ld+json"

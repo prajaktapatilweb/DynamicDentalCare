@@ -29,7 +29,8 @@ const Footer = () => {
 
             
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
-              Discover exceptional dental care at Dynamic Dental Care and Implant Centre, conveniently located in Airoli, Navi Mumbai, and Thane West. Led by Dr. Anuj Mishra, our dedicated team is committed to providing personalized treatments for a long-lasting, healthy smile. Whether you're in Airoli, Navi Mumbai, or Thane West, we're here for you.
+              Looking for a dental clinic in Airoli? We're here for you, conveniently located to serve the Airoli community. Whether you're in Navi Mumbai or Thane West, we're happy to welcome you as well.
+
               </Typography>
             
              

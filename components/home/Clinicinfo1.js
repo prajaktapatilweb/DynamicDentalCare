@@ -115,9 +115,10 @@ const Clinicinfo1 = () => {
                                 {/* <img src="/images/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" class="img-fluid" alt="" /> */}
                             </Grid>
                             <Grid item xs={12} md={6} textAlign='justify'>
-                                <Typography variant="h1" sx={{fontSize:{xs:27,md:33},mt:{xs:3,md:0}}}> Best Dentist in Airoli</Typography>
+                                <Typography variant="h1" sx={{fontSize:{xs:27,md:33},mt:{xs:3,md:0}}}> Best Dentist in Airoli, Navi Mumbai</Typography>
                                 <p class="fst-italic" style={{marginTop:4,marginBottom:0}}>
-                                    Welcome to Dynamic Dental Care and Implant Centre, your trusted destination for top-quality dental care in Airoli, Navi Mumbai, and Thane West. Founded by Dr. Anuj Mishra, a renowned Dental Surgeon and Implantologist, and co-founded by Dr. Shweta Mishra, our clinic is committed to delivering excellence in dental services.
+                                Welcome to Dynamic Dental Care and Implant Centre, your ultimate destination for top-quality dental care. Led by Dr. Shweta Mishra, a renowned Dental Surgeon with over 8+ years of expertise and recognized as the best dentist in Airoli, together with co-founder Dr. Anuj Mishra, we are dedicated to delivering exceptional dental services. Join us on a journey towards a healthier, more vibrant smile today!
+
                                 </p>
                                 <List>
                                     {explist.map((item, i) => (
@@ -131,7 +132,8 @@ const Clinicinfo1 = () => {
                                 </List>
 
                                 <p>
-                                Experience the difference at Dynamic Dental Care and Implant Centre, where your smile is our priority. Schedule your appointment today for comprehensive and personalized dental care.
+Experience the difference, where your smile is our priority. Schedule your appointment today with the best dentist near me for comprehensive and personalized dental care.
+
 
                                 </p>
                             </Grid>

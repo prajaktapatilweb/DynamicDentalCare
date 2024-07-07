@@ -399,7 +399,7 @@ function ResponsiveAppBar() {
                                 sx={{ color: "white", lineHeight: 1.6, fontSize: 23 }}
                             >
                                 {" "}
-                                Welcome to Dynamic Dental Care
+                                Experience the Best Dentist in Airoli & Thane!
                             </Typography>
                             <Typography
                                 component="h2"
@@ -436,7 +436,8 @@ function ResponsiveAppBar() {
                                     },
                                 }}
                             >
-                               Step into Dynamic Dental Care and Implant Centre, your premier destination for top-tier dental solutions in Airoli, and Thane West.<br></br> Experience personalized care and cutting-edge techniques for radiant smiles.
+                               {/* Step into Dynamic Dental Care and Implant Centre, your premier destination for top-tier dental solutions in Airoli, and Thane West.<br></br> Experience personalized care and cutting-edge techniques for radiant smiles. */}
+                               Discover exceptional dental care and advanced techniques at Dynamic Dental Care and Implant Centre, your premier dental clinic in Airoli and Thane West.
                             </Typography>
                             </Hidden>
 

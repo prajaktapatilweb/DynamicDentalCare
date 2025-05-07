@@ -122,8 +122,8 @@ const Contact = () => {
 
                     <i class="bx"><LocationOnIcon /></i>
                     <h3 style={{fontSize:'18px'}}> Thane</h3>
-                    <p>Shop No.1, Ground Floor, New Sahjeevan Society, near Panchganga, 2nd Rabodi, Thane West, Thane 400601.
-</p>
+                    <p>Shop No. 50, Gr Floor, Revati T1 Building, Akash Ganga Co-operative Housing Society, opp. Saraswati School, 2nd Rabodi, Thane West, Thane, Maharashtra 400601</p>
+   
 <h3>Working Hours</h3>
                     <p>Monday to Sunday:<br/>
 10:00 AM – 02:00 PM<br/>

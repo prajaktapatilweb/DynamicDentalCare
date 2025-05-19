@@ -34,7 +34,7 @@ export default function Countdown() {
     return (
         <div>
             <Box>
-                <Grid container spacing={2} sx={{ mb: 7, height: '100%' }}>
+                <Grid container spacing={2} sx={{ mb: 7, height: '100%',mt:5 }}>
                     {Details.map((item, i) => (
                         <Grid item xs={12} sm={12} md={3} key={i} alignItems='center' justifyContent='center' textAlign='center'>
                             <Card sx={{

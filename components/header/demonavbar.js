@@ -23,12 +23,12 @@ function ResponsiveAppBar() {
         <AppBar
             position="static"
             sx={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/hero1.jpg")`,
+                backgroundImage: { xs:`linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/hero5.jpg")`,md:`linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/hero1.jpg")`},
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                display: "flex",
-                height: "100%",
                 backgroundPosition:'center',
+                display: "flex",
+                height:"100%",
               
             }}
         >
@@ -168,6 +168,7 @@ function ResponsiveAppBar() {
                 >
                     <Grid item xs={12} md={12}>
                         <Box>
+                            <Hidden smDown>
                             <Typography
                                 variant="p"
                                 sx={{ color: "white", lineHeight: 1.6, fontSize: 23 }}
@@ -176,6 +177,7 @@ function ResponsiveAppBar() {
                                 Trusted dental clinic in Airoli and Thane West.
 
                             </Typography>
+                            </Hidden>
                             <Typography
                                 component="h2"
                                 sx={{

@@ -21,7 +21,7 @@ const Drgalleryitem = ({ item }) => {
 
                     <Image
                         alt={'Clinic' + item.id}
-                        src={`/images/Thane/newclinic/thanes${item}.jpg`}
+                        src={`/images/Thane/newclinic/thane${item}.jpg`}
                         width={100}
                         height={100}
 style={{border:'5px solid #2b3478', padding:5,borderRadius:5}}

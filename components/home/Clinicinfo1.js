@@ -1,25 +1,12 @@
 import React from "react";
-import Image from "next/image";
-import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import { styled } from "@mui/material/styles";
-import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import LinearProgress, {
-    linearProgressClasses,
-} from "@mui/material/LinearProgress";
-import { data } from "./feature.data";
-import { motion, useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
-import Fadeupside from "../Animations/Fadeupside";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import StarIcon from "@mui/icons-material/Star";
 import FileDownloadDoneIcon from '@mui/icons-material/FileDownloadDone';
-import Countdown from "./Countdown";
-import typography from "../../config/theme/typography";
-import Drgallery from "./Drgallery";
 import Drgallery1 from "./Drgallery1";
 
 
@@ -98,49 +85,36 @@ const Clinicinfo1 = () => {
         <>
 
             {/* <!-- ======= About Us Section ======= --> */}
-                <section id="about" class="about" style={{ background: 'white' }}>
-                    <Container>
+            <section id="about" class="about" style={{ background: 'white' }}>
 
-                        <Grid container spacing={3} >
-                            <Grid item xs={12} md={6}>
-                                <Drgallery1/>
-                                {/* <Image
-                                    src="/images/clinic1.jpg"
-                                    height={100}
-                                    width={100}
-                                    layout="responsive"
-                                    objectFit="cover"
-                                    alt="dr-akshays-dentavenue-dental-clinic-chembur-mumbai"
-                                /> */}
-                                {/* <img src="/images/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" class="img-fluid" alt="" /> */}
-                            </Grid>
-                            <Grid item xs={12} md={6} textAlign='justify'>
-                                <Typography variant="h1" sx={{fontSize:{xs:27,md:33},mt:{xs:3,md:0}}}> Best Dentist in Airoli, Navi Mumbai</Typography>
-                                <p class="fst-italic" style={{marginTop:4,marginBottom:0}}>
-                                Welcome to Dynamic Dental Care and Implant Centre, your ultimate destination for top-quality dental care. Led by Dr. Shweta Mishra, a renowned Dental Surgeon with over 8+ years of expertise and recognized as the best dentist in Airoli, together with co-founder Dr. Anuj Mishra, we are dedicated to delivering exceptional dental services. Join us on a journey towards a healthier, more vibrant smile today!
+                <Grid container spacing={3} >
+                    <Grid item xs={12} md={6}>
+                        <Drgallery1 />
+                       </Grid>
+                    <Grid item xs={12} md={6} textAlign='justify'>
+                        <Typography variant="h1" sx={{ fontSize: { xs: 27, md: 33 }, mt: { xs: 3, md: 0 } }}> Best Dentist in Airoli, Navi Mumbai</Typography>
+                        <p class="fst-italic" style={{ marginTop: 4, marginBottom: 0 }}>
+                            Welcome to Dynamic Dental Care, your ultimate destination for top-quality dental care. Led by Dr. Shweta Mishra, a renowned Dental Surgeon with over 8+ years of expertise and recognized as the best dentist in Airoli, together with co-founder Dr. Anuj Mishra, we are dedicated to delivering exceptional dental services. Join us on a journey towards a healthier, more vibrant smile today!
 
-                                </p>
-                                <List>
-                                    {explist.map((item, i) => (
-                                        <ListItem
-                                            key={item}
-                                        >
-                                            <FileDownloadDoneIcon sx={{ fontSize: 18, marginRight: 1, color: 'primary.main' }} />
-                                            {item}
-                                        </ListItem>
-                                    ))}
-                                </List>
+                        </p>
+                        <List>
+                            {explist.map((item, i) => (
+                                <ListItem
+                                    key={item}
+                                >
+                                    <FileDownloadDoneIcon sx={{ fontSize: 18, marginRight: 1, color: 'primary.main' }} />
+                                    {item}
+                                </ListItem>
+                            ))}
+                        </List>
 
-                                <p>
-Experience the difference, where your smile is our priority. Schedule your appointment today with the best dentist near me for comprehensive and personalized dental care.
+                        <p>
+                            Experience the difference, where your smile is our priority. Schedule your appointment today with the best dentist near me for comprehensive and personalized dental care.
+                        </p>
+                    </Grid>
+                </Grid>
 
-
-                                </p>
-                            </Grid>
-                        </Grid>
-
-                    </Container>
-                </section>
+            </section>
         </>
     );
 };

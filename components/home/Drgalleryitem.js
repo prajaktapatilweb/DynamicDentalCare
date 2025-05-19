@@ -4,13 +4,10 @@ import Box from '@mui/material/Box';
 import { iconButtonClasses } from '@mui/material/IconButton';
 const Drgalleryitem = ({ item }) => {
     return (
-        <Box sx={{
-            px: 1,
-        }}>
+        <Box>
             <Box sx={{
-                p: 1,
-                // backgroundColor: 'background.paper',
-                borderRadius: 1,
+              
+borderRadius:5,
                 transition: (theme) => theme.transitions.create(['box-shadow']),
                 boxShadow: 5,
                 '&:hover': {
@@ -26,10 +23,10 @@ const Drgalleryitem = ({ item }) => {
 
                     <Image
                         alt={'Clinic' + item.id}
-                        src={`/images/Thane/t/clinic${item}.jpg`}
+                        src={`/images/Thane/newclinic/thanes${item}.jpg`}
                         width={100}
                         height={100}
-
+style={{border:'5px solid #2b3478', padding:5,borderRadius:5}}
                         layout='responsive'></Image>
 
                 </Box>

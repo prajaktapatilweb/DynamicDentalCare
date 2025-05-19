@@ -97,26 +97,16 @@ const Clinicinfo = () => {
         <>
 
             {/* <!-- ======= About Us Section ======= --> */}
-                <section id="about" class="about" style={{ background: 'white' }}>
-                    <Container>
-
+                <Box id="about">
+                   
                         <Grid container spacing={3} >
                             <Grid item xs={12} md={6}>
                                 <Drgallery/>
-                                {/* <Image
-                                    src="/images/clinic1.jpg"
-                                    height={100}
-                                    width={100}
-                                    layout="responsive"
-                                    objectFit="cover"
-                                    alt="dr-akshays-dentavenue-dental-clinic-chembur-mumbai"
-                                /> */}
-                                {/* <img src="/images/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" class="img-fluid" alt="" /> */}
-                            </Grid>
+                               </Grid>
                             <Grid item xs={12} md={6} textAlign='justify'>
                                 <Typography variant="h1" sx={{fontSize:{xs:27,md:33},mt:{xs:3,md:0}}}>Best Dentist in Thane West</Typography>
                                 <p class="fst-italic" style={{marginTop:4,marginBottom:0}}>
-                                Welcome to Dynamic Dental Care and Implant Centre, your trusted destination for top-quality dental care. Founded by Dr. Anuj Mishra, a renowned Dental Surgeon and Implantologist, and co-founded by Dr. Shweta Mishra. We offer services for adults seeking the best dentist in Thane and specialize in pediatric dentistry to ensure a positive dental experience for your children. 
+                                Welcome to Dynamic Dental Care, your trusted destination for top-quality dental care. Founded by Dr. Anuj Mishra, a renowned Dental Surgeon and Implantologist, and co-founded by Dr. Shweta Mishra. We offer services for adults seeking the best dentist in Thane and specialize in pediatric dentistry to ensure a positive dental experience for your children. 
 
                                 </p>
                                 <List>
@@ -138,8 +128,8 @@ const Clinicinfo = () => {
                             </Grid>
                         </Grid>
 
-                    </Container>
-                </section>
+                   
+                </Box>
         </>
     );
 };

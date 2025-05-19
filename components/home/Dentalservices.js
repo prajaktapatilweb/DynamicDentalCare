@@ -41,7 +41,7 @@ const SliderArrow = (props) => {
 };
 const StyledDots = styled("ul")(({ theme }) => ({
   "&.slick-dots": {
-    position: "absolute",
+    position: "relative",
     left: 0,
     bottom: -20,
     paddingLeft: theme.spacing(1),
@@ -81,25 +81,21 @@ const Dentalservices = () => {
     ),
   };
   return (
-    <Box
+    <section
       id="treatments"
-      sx={{
-        py: { xs: 7, md: 7 },
-
+      style={{
         backgroundColor: "#f3fbfd",
-        // background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
       }}
     >
-      <Container maxWidth="lg">
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={12}>
+      <Container>
+       
+          
             <div class="section-title">
               <h2>Smile Solutions Hub</h2>
               <p style={{marginTop:-5}}> Crafting Your Dream Smile: Our Range of Expert Services</p>
             </div>
 
-          </Grid>
-
+            <Grid container spacing={2}>
           <Grid item xs={12} md={12}>
             <Slider {...sliderConfig}>
               {data.map((item) => (
@@ -109,7 +105,7 @@ const Dentalservices = () => {
           </Grid>
         </Grid>
       </Container>
-    </Box>
+    </section>
   );
 };
 export default Dentalservices;

@@ -1,10 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Box from '@mui/material/Box';
-import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
-import IconButton, { iconButtonClasses } from '@mui/material/IconButton';
-import ArrowForward from '@mui/icons-material/ArrowForward';
+import  { iconButtonClasses } from '@mui/material/IconButton';
 const CourseCardItem = ({ item }) => {
   return (<Box sx={{
     px: 1,
@@ -28,7 +26,7 @@ const CourseCardItem = ({ item }) => {
       <Box sx={{
         lineHeight: 0,
         overflow: 'hidden',
-        mb: 2,
+       
       }}>
         <Image src={item.cover} height={100}
           width={100}

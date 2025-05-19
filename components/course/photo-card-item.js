@@ -9,8 +9,6 @@ const PhotoCardItem = ({ item }) => {
       py: 1,
     }}>
       <Box sx={{
-        p: 1,
-        // backgroundColor: 'background.paper',
         borderRadius: 4,
         transition: (theme) => theme.transitions.create(['box-shadow']),
         '&:hover': {
@@ -22,20 +20,15 @@ const PhotoCardItem = ({ item }) => {
           },
         },
       }}>
-        <Box>
-         
-          <Image
-            alt={'Course ' + item.id}
-            src={`/images/clinicphotos/patient${item}.jpg`}
-            width={100}
-            height={100}
-            layout='responsive'></Image>
-       
-
-         
-        </Box>
-       
-      </Box>
+        <Image
+          alt={'Course ' + item.id}
+          src={`/images/clinicphotos/patient${item}.jpg`}
+          width={100}
+          height={100}
+          layout='responsive'
+          style={{ border: '1px solid white', borderRadius: 4 }}
+        ></Image>
+     </Box>
     </Box>);
 };
 export default PhotoCardItem;

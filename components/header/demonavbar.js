@@ -1,14 +1,9 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import MenuItem from "@mui/material/MenuItem";
-import { Card, Grid, Hidden, Link } from "@mui/material";
+import {Grid, Hidden, IconButton, Link } from "@mui/material";
 import Image from "next/image";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -20,55 +15,20 @@ import Countdown from "../home/Countdown";
 import Navbar from "./navbar";
 
 
-const pages = [
-    { linkID: "/#home", label: "Home" },
-    { linkID: "/#aboutus", label: "About Us" },
-    { linkID: "/#treatments", label: "Treatments" },
-    { linkID: "/#Doctors", label: "Doctors" },
-    { linkID: "/#testimonials", label: "Testimonials" },
-    { linkID: "/#gallery", label: "Gallery" },
-    { linkID: "/#contactform", label: "Contact" },
-];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
-
 function ResponsiveAppBar() {
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
-    const [flag, setFlag] = React.useState(false);
-
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
-    };
-
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
-    };
-
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
-    const handleOpenMobileSubMenu = () => {
-        // handleCloseNavMenu()
-        setFlag(!flag);
-    };
-
   const contactno1 = "+919833389890";
   const contactno2 = "+919702955057";
-
-
 
     return (
         <AppBar
             position="static"
             sx={{
-                backgroundImage: `url("/images/hero3.png")`,
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/hero1.jpg")`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 display: "flex",
                 height: "100%",
+                backgroundPosition:'center',
               
             }}
         >
@@ -188,192 +148,6 @@ function ResponsiveAppBar() {
                     </Box>
                 </Container>
             </section>
-            {/* <section style={{
-                // background: '#121f38',
-                 width: '100%', padding: 3,
-                background: 'rgba( 255, 255, 255, 0.4)',
-                // backgroundColor:'white',
-                boxShadow: ' 0 10px 10px 1px #0000001f',
-                backdropFilter: 'blur( 8px )',
-                textAlign: 'center', justifyContent: 'center', alignItems: 'center',
-                // borderBottom: '1px solid #ffffff36',
-                display: 'flex'
-            }}>
-                <Toolbar disableGutters >
-
-
-                    <Box
-                        sx={{
-                            flexGrow: 1,
-                            display: { xs: "flex", sm: "flex", md: "flex", lg: "none" },
-                        }}
-                    >
-                        <IconButton
-                            size="large"
-                            aria-label="account of current user"
-                            aria-controls="menu-appbar"
-                            aria-haspopup="true"
-                            onClick={handleOpenNavMenu}
-                            color="inherit"
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                        <Menu
-                            id="menu-appbar"
-                            anchorEl={anchorElNav}
-                            anchorOrigin={{
-                                vertical: "bottom",
-                                horizontal: "left",
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: "top",
-                                horizontal: "left",
-                            }}
-                            open={Boolean(anchorElNav)}
-                            onClose={handleCloseNavMenu}
-                            sx={{
-                                display: { xs: "block", sm: "block", md: "block", lg: "none" },
-                            }}
-                        >
-                            {pages.map((page, i) => {
-                                // if (page.submenu) {
-                                //     return <AccountMenu list={page.submenu} />
-
-                                // } else {
-                                return (
-                                    <>
-                                        <Link
-                                            key={i}
-                                            href={page.linkID}
-                                            sx={{
-                                                fontWeight: 800,
-                                                letterSpacing: ".1rem",
-                                                color: "black",
-                                                textDecoration: "none",
-                                                textAlign: "center",
-                                            }}
-                                        >
-                                            <MenuItem
-                                                key={page}
-                                                onClick={
-                                                    page.submenu
-                                                        ? handleOpenMobileSubMenu
-                                                        : handleCloseNavMenu
-                                                }
-                                            >
-                                                <Grid container direction="row" alignItems="center">
-                                                    {page.label} 
-                                                </Grid>
-                                            </MenuItem>
-                                        </Link>
-                                       
-                                    </>
-                                );
-                            })}
-                        </Menu>
-                    </Box>
-                    <Box sx={{flexGrow:1}}>                    
-                        <Image src="/images/ddclogo1.png" width={150} height={80} objectFit="contain"></Image>
-                        </Box>
-
-                    {/* dekstop menu *
-                    <Box
-                        sx={{
-                            flexGrow: 10,
-                            display: { xs: "none", md: "flex", textDecoration: "none" },
-                        }}
-                    >
-                        {pages.map((page, i) => {
-                            if (page.submenu) {
-                                
-                                return (
-                                    <Box sx={{ flexGrow: 0 }}>
-                                        
-                                        <Menu
-                                            sx={{ mt: "45px" }}
-                                            id="menu-appbar"
-                                            anchorEl={anchorElUser}
-                                            anchorOrigin={{
-                                                vertical: "top",
-                                                horizontal: "right",
-                                            }}
-                                            keepMounted
-                                            transformOrigin={{
-                                                vertical: "top",
-                                                horizontal: "right",
-                                            }}
-                                            open={Boolean(anchorElUser)}
-                                            onClose={handleCloseUserMenu}
-                                        >
-                                            {/* {settings.map((setting) => (
-                                            <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                                <Typography textAlign="center">{setting}</Typography>
-                                            </MenuItem>
-                                        ))} *
-                                            {page?.submenu?.map((item, i) => (
-                                                <Link
-                                                    key={i}
-                                                    href={item.linkID}
-                                                    sx={{
-                                                        // mr: 2,
-                                                        fontWeight: 800,
-                                                        letterSpacing: ".1rem",
-                                                        color: "black",
-                                                        textDecoration: "none",
-                                                        textAlign: "center",
-                                                    }}
-                                                >
-                                                    <MenuItem key={i} onClick={handleCloseUserMenu}>
-                                                        <Typography variant="h5">{item.label}</Typography>
-                                                    </MenuItem>
-                                                </Link>
-                                            ))}
-                                        </Menu>
-                                    </Box>
-                                );
-                            } else {
-                                return (
-                                    <Link
-                                        key={i}
-                                        href={page.linkID}
-                                        sx={{
-                                            display: {
-                                                xs: "none",
-                                                sm: "none",
-                                                md: "none",
-                                                lg: "flex",
-                                            },
-                                            fontWeight: 900,
-                                            letterSpacing: ".1rem",
-                                            color: '#29357a',
-                                            textDecoration: "none",
-                                            float: "right",
-
-                                            '&:hover': {
-                                                color:'white'
-                                            }
-
-                                          
-                                        }}
-                                        
-                                    >
-                                        <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                            <Typography
-                                                variant="h5"
-                                                sx={{ fontSize: { md: 15, lg: 16, xl: 16 } }}
-                                            >
-                                                {page.label}
-                                            </Typography>
-                                        </MenuItem>
-                                    </Link>
-                                );
-                            }
-                        })}
-                    </Box>
-
-                </Toolbar>
-            </section> */}
             <section style={{
                  padding: 3,
                 background: 'rgba( 255, 255, 255, 0.4)',
@@ -399,7 +173,8 @@ function ResponsiveAppBar() {
                                 sx={{ color: "white", lineHeight: 1.6, fontSize: 23 }}
                             >
                                 {" "}
-                                Experience the Best Dentist in Airoli & Thane!
+                                Trusted dental clinic in Airoli and Thane West.
+
                             </Typography>
                             <Typography
                                 component="h2"
@@ -417,29 +192,7 @@ function ResponsiveAppBar() {
                                 {" "}
                                 Your Journey to Dental Wellness Starts Here!
                             </Typography>
-                        <Hidden mdDown>
-
-                            <Typography
-                                component="span"
-                                sx={{
-                                    fontSize: "18px",
-
-                                    fontWeight: 400,
-                                    position: "relative",
-
-                                    "& svg": {
-                                        position: "absolute",
-                                        top: -7,
-                                        right: -20,
-                                        width: { xs: 22, md: 27 },
-                                        height: "auto",
-                                    },
-                                }}
-                            >
-                               {/* Step into Dynamic Dental Care and Implant Centre, your premier destination for top-tier dental solutions in Airoli, and Thane West.<br></br> Experience personalized care and cutting-edge techniques for radiant smiles. */}
-                               Discover exceptional dental care and advanced techniques at Dynamic Dental Care and Implant Centre, your premier dental clinic in Airoli and Thane West.
-                            </Typography>
-                            </Hidden>
+                      
 
                             <Box sx={{ "& button": { mt: 4, mb: 7 } }}>
                                 <ScrollLink

@@ -1,14 +1,11 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
 import Slider from "react-slick";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
 import { useTheme, styled } from "@mui/material/styles";
 import { IconButton, useMediaQuery } from "@mui/material";
 import IconArrowBack from "@mui/icons-material/ArrowBack";
 import IconArrowForward from "@mui/icons-material/ArrowForward";
-import { data } from "./photo-gallery.data";
 import PhotoCardItem from "../course/photo-card-item";
 const SliderArrow = (props) => {
   const { onClick, type, className } = props;
@@ -42,13 +39,19 @@ const SliderArrow = (props) => {
 };
 const StyledDots = styled("ul")(({ theme }) => ({
   "&.slick-dots": {
-    position: "absolute",
+    position: "relative",
     left: 0,
     bottom: -20,
     paddingLeft: theme.spacing(1),
     textAlign: "left",
     "& li": {
+      
       marginRight: theme.spacing(2),
+      "& > div": {
+        backgroundColor: "#fff", // white for non-active
+      
+       
+      },
       "&.slick-active>div": {
         backgroundColor: theme.palette.primary.main,
       },
@@ -82,20 +85,22 @@ const Photogallery = () => {
     ),
   };
   return (
-    <Box
+    <section
       id="gallery"
-      sx={{
-        py: { xs: 7, md: 7 },
-        backgroundColor: "#f7fcfc",
+      style={{
+        backgroundColor: "#f7fcfc", // fallback color
+        backgroundImage: 'url("/images/testiback2.jpg")',
+        backgroundSize: "contain",            // cover the entire box
+        backgroundPosition: "center",       // center the image
+        backgroundRepeat: "repeat",  
+          
       }}
     >
-      <Container maxWidth="lg">
+      <Container>
         <div class="section-title">
-          <h2>Smile Gallery</h2>
-          <p>Where Happiness Shines Bright</p>
+          <h2 style={{color:'white'}}>Smile Gallery</h2>
+          <p style={{color:'white',marginTop:-5}}>Where Happiness Shines Bright</p>
         </div>
-
-
         <Slider {...sliderConfig}>
           {/* {data.map((item) => (<PhotoCardItem key={String(item.id)} item={item} />))} */}
           {[...Array(7)].slice(0).map((e, i) => (
@@ -104,7 +109,7 @@ const Photogallery = () => {
         </Slider>
       </Container>
 
-    </Box>
+    </section>
   );
 };
 export default Photogallery;

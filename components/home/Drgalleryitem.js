@@ -4,10 +4,8 @@ import Box from '@mui/material/Box';
 import { iconButtonClasses } from '@mui/material/IconButton';
 const Drgalleryitem = ({ item }) => {
     return (
-        <Box>
-            <Box sx={{
-              
-borderRadius:5,
+       
+            <Box sx={{borderRadius:5,
                 transition: (theme) => theme.transitions.create(['box-shadow']),
                 boxShadow: 5,
                 '&:hover': {
@@ -32,6 +30,6 @@ style={{border:'5px solid #2b3478', padding:5,borderRadius:5}}
                 </Box>
 
             </Box>
-        </Box>);
+       );
 };
 export default Drgalleryitem;

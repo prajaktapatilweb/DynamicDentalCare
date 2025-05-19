@@ -7,41 +7,12 @@ import IconArrowBack from "@mui/icons-material/ArrowBack";
 import IconArrowForward from "@mui/icons-material/ArrowForward";
 import Drgalleryitem from "./Drgalleryitem";
 import Drgalleryitem1 from "./Drgalleryitem1";
-const SliderArrow = (props) => {
-    const { onClick, type, className } = props;
-    return (
-        <IconButton
-            sx={{
-                backgroundColor: "background.paper",
-                color: "primary.main",
-                "&:hover": {
-                    backgroundColor: "primary.main",
-                    color: "primary.contrastText",
-                },
-                bottom: { xs: "-70px !important", md: "-28px !important" },
-                left: "unset !important",
-                right: type === "prev" ? "60px !important" : "0 !important",
-                zIndex: 10,
-                boxShadow: 1,
-            }}
-            disableRipple
-            color="inherit"
-            onClick={onClick}
-            className={className}
-        >
-            {type === "next" ? (
-                <IconArrowForward sx={{ fontSize: 0 }} />
-            ) : (
-                <IconArrowBack sx={{ fontSize: 0 }} />
-            )}
-        </IconButton>
-    );
-};
+
 const StyledDots = styled("ul")(({ theme }) => ({
     "&.slick-dots": {
-        position: "absolute",
+        position: "relative",
         left: 0,
-        bottom: -30,
+        bottom: -20,
         paddingLeft: theme.spacing(1),
         textAlign: "center",
         "& li": {
@@ -62,9 +33,8 @@ const Drgallery1 = () => {
         speed: 300,
         slidesToShow: matchMobileView ? 1 : 1,
         slidesToScroll: 1,
-        prevArrow: <SliderArrow type="prev" />,
-        nextArrow: <SliderArrow type="next" />,
         dots: true,
+        arrows:false,
         appendDots: (dots) => <StyledDots>{dots}</StyledDots>,
         customPaging: () => (
             <Box

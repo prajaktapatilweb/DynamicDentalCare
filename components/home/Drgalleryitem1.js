@@ -4,14 +4,8 @@ import Box from '@mui/material/Box';
 import { iconButtonClasses } from '@mui/material/IconButton';
 const Drgalleryitem1 = ({ item }) => {
     return (
-        <Box sx={{
-            px: 1,
-            // py: 4,
-        }}>
-            <Box sx={{
-                p: 1,
-                // backgroundColor: 'background.paper',
-                borderRadius: 1,
+
+            <Box sx={{borderRadius:5,
                 transition: (theme) => theme.transitions.create(['box-shadow']),
                 boxShadow: 5,
                 '&:hover': {
@@ -30,11 +24,12 @@ const Drgalleryitem1 = ({ item }) => {
                         src={`/images/Airoli/a/clinic${item}.jpg`}
                         width={100}
                         height={100}
+                        style={{border:'5px solid #2b3478', padding:5,borderRadius:5}}
                         layout='responsive'></Image>
 
                 </Box>
 
             </Box>
-        </Box>);
+        );
 };
 export default Drgalleryitem1;

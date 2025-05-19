@@ -88,11 +88,11 @@ const Clinicinfo1 = () => {
             <section id="about" class="about" style={{ background: 'white' }}>
 
                 <Grid container spacing={3} >
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={5}>
                         <Drgallery1 />
                        </Grid>
-                    <Grid item xs={12} md={6} textAlign='justify'>
-                        <Typography variant="h1" sx={{ fontSize: { xs: 27, md: 33 }, mt: { xs: 3, md: 0 } }}> Best Dentist in Airoli, Navi Mumbai</Typography>
+                    <Grid item xs={12} md={7} textAlign='justify'>
+                        <Typography variant="h1" sx={{ fontSize: { xs: 27, md: 33 }, mt: { xs: 3, md: 0 } ,textAlign:'left'}}> Best Dentist in Airoli, Navi Mumbai</Typography>
                         <p class="fst-italic" style={{ marginTop: 4, marginBottom: 0 }}>
                             Welcome to Dynamic Dental Care, your ultimate destination for top-quality dental care. Led by Dr. Shweta Mishra, a renowned Dental Surgeon with over 8+ years of expertise and recognized as the best dentist in Airoli, together with co-founder Dr. Anuj Mishra, we are dedicated to delivering exceptional dental services. Join us on a journey towards a healthier, more vibrant smile today!
 

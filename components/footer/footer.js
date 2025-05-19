@@ -16,24 +16,19 @@ const Footer = () => {
       component="footer"
       sx={{
         backgroundColor: "#121f38",
-        py:3,
+        py: 3,
         color: "primary.contrastText",
       }}
     >
-   
+
       <Container sx={{ textAlign: { xs: "center", md: "left" }, maxWidth: { xl: 1300 } }}>
         <Grid container spacing={2} alignItems='center' justifyContent='center'>
           <Grid item xs={12} md={5}>
             <Box sx={{ mb: { xs: 3, md: 0 } }}>
-            <Image src="/images/ddclogo.jpeg" width={180} height={100} ></Image>
-
-            
+              <Image src="/images/ddclogo.jpeg" width={180} height={100} ></Image>
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
-              Looking for a dental clinic in Airoli? We're here for you, conveniently located to serve the Airoli community. Whether you're in Navi Mumbai or Thane West, we're happy to welcome you as well.
-
-              </Typography>
-            
-             
+                Looking for a dental clinic in Airoli or Thane West?
+                We’re here for you conveniently located to serve both the Airoli and Thane West communities. Whether you're in Navi Mumbai or nearby, we’re happy to welcome you!   </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} md={2}>
@@ -65,10 +60,10 @@ const Footer = () => {
                 Gallery
               </Link>
             </Typography>
-          
-          
 
-             
+
+
+
 
             {/* <FooterNavigation /> */}
           </Grid>
@@ -92,19 +87,19 @@ const Footer = () => {
             <Typography variant="h4" sx={{ fontWeight: "400" }} gutterBottom>
               Get In Touch
             </Typography>
-          
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15076.329523138258!2d72.9939084!3d19.1478709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf5357d89b7f%3A0xed6d36e32f7534ab!2sDynamic%20Dental%20Care!5e0!3m2!1sen!2sin!4v1715864098424!5m2!1sen!2sin"  width="48%"
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15076.329523138258!2d72.9939084!3d19.1478709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf5357d89b7f%3A0xed6d36e32f7534ab!2sDynamic%20Dental%20Care!5e0!3m2!1sen!2sin!4v1715864098424!5m2!1sen!2sin" width="48%"
               height="100%"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              style={{ marginBottom: 3, marginTop: 3,marginRight:4 }}></iframe> 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15071.132131692939!2d72.9851153!3d19.2046766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b936d2fde0c1%3A0xf5ef3c3e031df47f!2sDynamic%20Dental%20Care%20-%20Best%20dentist%20in%20thane!5e0!3m2!1sen!2sin!4v1715864246797!5m2!1sen!2sin"   width="48%"
+              style={{ marginBottom: 3, marginTop: 3, marginRight: 4 }}></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15071.132131692939!2d72.9851153!3d19.2046766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b936d2fde0c1%3A0xf5ef3c3e031df47f!2sDynamic%20Dental%20Care%20-%20Best%20dentist%20in%20thane!5e0!3m2!1sen!2sin!4v1715864246797!5m2!1sen!2sin" width="48%"
               height="100%"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               style={{ marginBottom: 3, marginTop: 3 }}></iframe>
 
-          
+
 
             {/* <FooterSocialLinks /> */}
 

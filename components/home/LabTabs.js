@@ -6,6 +6,7 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Clinicinfo from './Clinicinfo';
 import Clinicinfo1 from './Clinicinfo1';
+import { Container } from '@mui/material';
 
 export default function LabTabs() {
   const [value, setValue] = React.useState('1');
@@ -15,8 +16,8 @@ export default function LabTabs() {
   };
 
   return (
-    <>
     <section>
+    <Container>
 <div class="section-title" id='aboutus'>
               <h2>About Dynamic Dental Care</h2>
             </div>
@@ -60,7 +61,7 @@ export default function LabTabs() {
         <TabPanel value="2"><Clinicinfo1/> </TabPanel>
       </TabContext>
     </Box>
-    </section>
-</>
+    </Container>
+</section>
   );
 }

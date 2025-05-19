@@ -23,13 +23,12 @@ function ResponsiveAppBar() {
         <AppBar
             position="static"
             sx={{
-                backgroundImage: { xs:`linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/hero5.jpg")`,md:`linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/hero1.jpg")`},
+                backgroundImage: { xs:`linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/hero5.JPG")`,md:`linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/hero1.jpg")`},
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition:'center',
                 display: "flex",
                 height:"100%",
-              
             }}
         >
             <section style={{
@@ -134,16 +133,16 @@ function ResponsiveAppBar() {
                                       
                                 </a>
                             </IconButton>
-                            {/* <IconButton aria-label="youtube">
+                            <IconButton aria-label="linktree">
                                 <a
-                                    href="https://www.youtube.com/channel/UCaHUj0eP9LiEK5zL7QrNbNw"
+                                    href="https://linktr.ee/DynamicDentalCare"
                                     target="_blank"
                                     rel="noreferrer"
-                                    aria-label="youtube"
+                                    aria-label="linkedin"
                                 >
-                                    <YouTubeIcon sx={{ color: "white" }}></YouTubeIcon>
+                                     <Image src="/images/icons/linktree.webp" width={20} height={20} ></Image>  
                                 </a>
-                            </IconButton> */}
+                            </IconButton>
                         </Box>
                     </Box>
                 </Container>

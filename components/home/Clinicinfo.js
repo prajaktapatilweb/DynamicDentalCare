@@ -104,7 +104,7 @@ const Clinicinfo = () => {
                                 <Drgallery/>
                                </Grid>
                             <Grid item xs={12} md={7} textAlign='justify'>
-                                <Typography variant="h1" sx={{fontSize:{xs:27,md:33},mt:{xs:3,md:0}}}>Best Dentist in Thane West</Typography>
+                                <Typography variant="h1" sx={{fontSize:{xs:27,md:33},mt:{xs:3,md:0},textAlign:'left'}}>Best Dentist in Thane West</Typography>
                                 <p class="fst-italic" style={{marginTop:4,marginBottom:0}}>
                                 Welcome to Dynamic Dental Care, your trusted destination for top-quality dental care. Founded by Dr. Anuj Mishra, a renowned Dental Surgeon and Implantologist, and co-founded by Dr. Shweta Mishra. We offer services for adults seeking the best dentist in Thane and specialize in pediatric dentistry to ensure a positive dental experience for your children. 
 

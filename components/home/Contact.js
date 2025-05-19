@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Card, Link } from '@mui/material';
+import {  Card, Link } from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Axios from 'axios';
@@ -9,31 +9,24 @@ import AppTextField from '../Formik/AppTextField';
 import { Button, FormControl, Grid, InputLabel } from '@mui/material';
 import CustomizedSelectFormik from '../Formik/CustomizedSelectFormik';
 import { useRouter } from 'next/router';
-import CallTwoToneIcon from "@mui/icons-material/CallTwoTone";
-import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import IconButton from "@mui/material/IconButton";
 import GoogleRecaptcha from '../GoogleRecaptcha';
 
 
 const All = [
-  { key: 1, text: 'Braces/ aligners', value: 'Braces/ aligners' },
-  { key: 2, text: 'Dental implants', value: 'Dental implants' },
-  { key: 3, text: 'Dental veneers (smile designing)', value: 'Dental veneers (smile designing)' },
-  { key: 4, text: 'Full mouth rehabilitation', value: 'Full mouth rehabilitation' },
-  { key: 5, text: 'Pediatric (kids dentistry)', value: 'Pediatric (kids dentistry)' },
-  { key: 6, text: 'Root canal', value: 'Root canal' },
-  { key: 7, text: 'Wisdom teeth extraction/ Teeth extraction', value: 'Wisdom teeth extraction/ Teeth extraction' },
+  { key: 1, text: 'Braces/Aligners', value: 'Braces/Aligners' },
+  { key: 2, text: 'Dental Implants', value: 'Dental Implants' },
+  { key: 3, text: 'Dental Veneers (Smile Designing)', value: 'Dental Veneers (Smile Designing)' },
+  { key: 4, text: 'Full Mouth Rehabilitation', value: 'Full Mouth Rehabilitation' },
+  { key: 5, text: 'Pediatric (Kids Dentistry)', value: 'Pediatric (Kids Dentistry)' },
+  { key: 6, text: 'Root Canal Treatment', value: 'Root Canal Treatment' },
+  { key: 7, text: 'Teeth Extraction', value: 'Teeth Extraction' },
   { key: 8, text: 'Other', value: 'Other' }
 ];
 const validationSchema = yup.object({
   name: yup
     .string()
     .required('Name is required'),
-  email: yup
-    .string()
-    .email('Please enter valid email ID'),
-    // .required('Email ID is required'),
   mobilenumber: yup
     .string()
     .required('Mobile Number is mandatory')
@@ -58,7 +51,6 @@ const Contact = () => {
     Axios.post("/api/nodemail", {
       // Axios.post("/api/sendemail", {
       name: values.name,
-      email: values.email,
       mobileno: values.mobilenumber,
       msg: values.msg,
       selection: values.selection
@@ -109,7 +101,7 @@ const Contact = () => {
 06:00 PM – 10:00 PM</p>
 
 <p>Sunday<br/>
-12:00 PM – 03:00 <br/>PM(By Appointment Only)</p>
+12:00 PM – 03:00 PM <br/>(By Appointment Only)</p>
 <Link  href={`tel:${contactno1}`} target="_blank">
                                     +919833389890
                                 </Link>{" "}
@@ -145,7 +137,6 @@ const Contact = () => {
                   validateOnChange={true}
                   initialValues={{
                     name: '',
-                    email: '',
                     mobilenumber: '',
                     msg: '',
                     selection: '',
@@ -157,7 +148,7 @@ const Contact = () => {
                   {({ initialValues, values, errors, isSubmitting }) => (
                     <Form style={{ textAlign: 'left' }}>
                       <Grid container spacing={2}>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={12}>
                           <AppTextField
                             placeholder='name'
                             name='name'
@@ -171,20 +162,7 @@ const Contact = () => {
                             variant='outlined'
                           />
                         </Grid>
-                        <Grid item xs={12} md={6}>
-                          <AppTextField
-                            placeholder='Email'
-                            name='email'
-                            label='Email ID'
-                            sx={{
-                              width: '100%',
-                              '& .MuiInputBase-input': {
-                                fontSize: 14,
-                              },
-                            }}
-                            variant='outlined'
-                          />
-                        </Grid>
+                      
                         <Grid item xs={12} md={6}>
                           <AppTextField
                             placeholder='Mobile Number'

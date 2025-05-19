@@ -26,7 +26,6 @@ export default async function handler(req, res) {
                 const emailContent =
                     `Dear Admin, \n \n Details of the person contacted you are as follows \n
                   Name: ${req.body.name} \n
-                  Email: ${req.body.email} \n
                   Mobile Number: ${req.body.mobileno} \n
                   Purpose : ${req.body.selection} \n
                   Message : ${req.body.msg} \n
